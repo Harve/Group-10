@@ -77,5 +77,37 @@ namespace SQLDatabase
             }
             m_dbConnection.Close();
         }
+
+        public static void UpdateModuleTeam(string userid, string moduleid, int leader)
+        {
+            SQLiteConnection m_dbConnection = new SQLiteConnection("Data Source=Database.sqlite;Version=3;");
+            m_dbConnection.Open();
+            using (SQLiteCommand command = new SQLiteCommand(m_dbConnection))
+            {
+                command.CommandText =
+                    "update moduleteam set leader = :leader where assessmentid=:assessmentid and moduleid = :moduleid";
+                command.Parameters.Add("leader", DbType.String).Value = leader;
+                command.Parameters.Add("userid", DbType.String).Value = userid;
+                command.Parameters.Add("moduleid", DbType.String).Value = moduleid;
+                command.ExecuteNonQuery();
+            }
+            m_dbConnection.Close();
+        }
+
+        public static void UpdateDeadline( string information, string moduleid, DateTime date)
+        {
+            SQLiteConnection m_dbConnection = new SQLiteConnection("Data Source=Database.sqlite;Version=3;");
+            m_dbConnection.Open();
+            using (SQLiteCommand command = new SQLiteCommand(m_dbConnection))
+            {
+                command.CommandText =
+                    "update deadline set information = :information, deadline = :deadline where moduleid = :moduleid";
+                command.Parameters.Add("information", DbType.String).Value = information;
+                command.Parameters.Add("date", DbType.String).Value = date;
+                command.Parameters.Add("moduleid", DbType.String).Value = moduleid;
+                command.ExecuteNonQuery();
+            }
+            m_dbConnection.Close();
+        }
     }
 }
