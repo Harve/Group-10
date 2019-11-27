@@ -88,5 +88,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Backbone\Backbone\Backbone.csproj">
+      <Project>{f951552c-ebc5-4b0e-9990-29c2d8830a28}</Project>
+      <Name>Backbone</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
