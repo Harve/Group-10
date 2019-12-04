@@ -63,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DeleteFromDatabase.cs" />
+    <Compile Include="Encryption.cs" />
     <Compile Include="InsertIntoDatabase.cs" />
     <Compile Include="ManageDatabase.cs" />
     <Compile Include="Program.cs" />
@@ -73,6 +74,12 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Backbone\Backbone\Backbone.csproj">
+      <Project>{f951552c-ebc5-4b0e-9990-29c2d8830a28}</Project>
+      <Name>Backbone</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

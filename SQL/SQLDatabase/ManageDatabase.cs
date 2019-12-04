@@ -22,7 +22,7 @@ namespace SQLDatabase
             SQLiteConnection m_dbConnection = new SQLiteConnection("Data Source=Database.sqlite;Version=3;");
             m_dbConnection.Open();
 
-            string sql = "create table user (userid varchar(8),firstname varchar(20), surname varchar(20), role varchar(30))";
+            string sql = "create table user (userid varchar(8), password varchar (30),firstname varchar(20), surname varchar(20), role varchar(30))";
 
             SQLiteCommand command = new SQLiteCommand(sql, m_dbConnection);
             command.ExecuteNonQuery();

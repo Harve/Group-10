@@ -15,6 +15,8 @@ namespace WindowsFormsApp1
         [STAThread]
         static void Main()
         {
+            SQLDatabase.SelectFromDatabase.LoadDatabase();
+            
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new HomeForm());
