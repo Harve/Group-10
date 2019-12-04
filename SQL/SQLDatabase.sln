@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLDatabase", "SQLDatabase\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Backbone", "..\Backbone\Backbone\Backbone.csproj", "{F951552C-EBC5-4B0E-9990-29C2D8830A28}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp1", "..\WindowsFormsApp1\WindowsFormsApp1\WindowsFormsApp1.csproj", "{497A3FA2-A261-49C2-8A65-BB09D8CE3DF4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserInterface", "..\WindowsFormsApp1\WindowsFormsApp1\UserInterface.csproj", "{497A3FA2-A261-49C2-8A65-BB09D8CE3DF4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
