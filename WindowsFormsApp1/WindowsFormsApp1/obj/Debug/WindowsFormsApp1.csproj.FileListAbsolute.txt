@@ -9,3 +9,13 @@ c:\users\575615\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Windows
 c:\users\575615\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 c:\users\575615\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
 c:\users\575615\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.HomeForm.resources
+\\adir.hull.ac.uk\home\575\575615\Desktop\Group-10-Jack\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+\\adir.hull.ac.uk\home\575\575615\Desktop\Group-10-Jack\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.CreateNewForm.resources
+\\adir.hull.ac.uk\home\575\575615\Desktop\Group-10-Jack\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.HomeForm.resources
+\\adir.hull.ac.uk\home\575\575615\Desktop\Group-10-Jack\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.LogOnForm.resources
+\\adir.hull.ac.uk\home\575\575615\Desktop\Group-10-Jack\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.MyAssessments.resources
+\\adir.hull.ac.uk\home\575\575615\Desktop\Group-10-Jack\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+\\adir.hull.ac.uk\home\575\575615\Desktop\Group-10-Jack\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+\\adir.hull.ac.uk\home\575\575615\Desktop\Group-10-Jack\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+\\adir.hull.ac.uk\home\575\575615\Desktop\Group-10-Jack\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+\\adir.hull.ac.uk\home\575\575615\Desktop\Group-10-Jack\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb

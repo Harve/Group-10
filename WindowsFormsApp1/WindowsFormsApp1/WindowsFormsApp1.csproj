@@ -46,11 +46,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CreateNewForm.cs">
+    <Compile Include="Administrator.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CreateNewForm.Designer.cs">
-      <DependentUpon>CreateNewForm.cs</DependentUpon>
+    <Compile Include="Administrator.Designer.cs">
+      <DependentUpon>Administrator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Calendar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calendar.Designer.cs">
+      <DependentUpon>Calendar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewAssessment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="New Assessment.Designer.cs">
+      <DependentUpon>NewAssessment.cs</DependentUpon>
     </Compile>
     <Compile Include="HomeForm.cs">
       <SubType>Form</SubType>
@@ -70,10 +82,22 @@
     <Compile Include="MyAssessments.Designer.cs">
       <DependentUpon>MyAssessments.cs</DependentUpon>
     </Compile>
+    <Compile Include="Notifications.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Notifications.Designer.cs">
+      <DependentUpon>Notifications.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="CreateNewForm.resx">
-      <DependentUpon>CreateNewForm.cs</DependentUpon>
+    <EmbeddedResource Include="Administrator.resx">
+      <DependentUpon>Administrator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calendar.resx">
+      <DependentUpon>Calendar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New Assessment.resx">
+      <DependentUpon>NewAssessment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HomeForm.resx">
       <DependentUpon>HomeForm.cs</DependentUpon>
@@ -83,6 +107,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MyAssessments.resx">
       <DependentUpon>MyAssessments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Notifications.resx">
+      <DependentUpon>Notifications.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

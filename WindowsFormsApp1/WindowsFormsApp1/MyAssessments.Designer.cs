@@ -30,6 +30,31 @@
         {
             this.MyAssessmentsLabel = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.StatusLabel5 = new System.Windows.Forms.Label();
+            this.DueDateLabel5 = new System.Windows.Forms.Label();
+            this.ModuleLabel5 = new System.Windows.Forms.Label();
+            this.AssessmentLabel5 = new System.Windows.Forms.Label();
+            this.StatusLabel4 = new System.Windows.Forms.Label();
+            this.DueDateLabel4 = new System.Windows.Forms.Label();
+            this.ModuleLabel4 = new System.Windows.Forms.Label();
+            this.AssessmentLabel4 = new System.Windows.Forms.Label();
+            this.StatusLabel3 = new System.Windows.Forms.Label();
+            this.DueDateLabel3 = new System.Windows.Forms.Label();
+            this.ModuleLabel3 = new System.Windows.Forms.Label();
+            this.StatusLabel2 = new System.Windows.Forms.Label();
+            this.DueDateLabel2 = new System.Windows.Forms.Label();
+            this.ModuleLabel2 = new System.Windows.Forms.Label();
+            this.AssessmentLabel2 = new System.Windows.Forms.Label();
+            this.StatusLabel1 = new System.Windows.Forms.Label();
+            this.DueDateLabel1 = new System.Windows.Forms.Label();
+            this.ModuleLabel1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.AssessmentLabel1 = new System.Windows.Forms.Label();
+            this.AssessmentLabel3 = new System.Windows.Forms.Label();
             this.BackButton = new System.Windows.Forms.Button();
             this.BackButtonPictureBox = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -37,31 +62,6 @@
             this.ModuleLabel = new System.Windows.Forms.Label();
             this.DueDateLabel = new System.Windows.Forms.Label();
             this.StatusLabel = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.AssessmentLabel1 = new System.Windows.Forms.Label();
-            this.ModuleLabel1 = new System.Windows.Forms.Label();
-            this.DueDateLabel1 = new System.Windows.Forms.Label();
-            this.StatusLabel1 = new System.Windows.Forms.Label();
-            this.AssessmentLabel2 = new System.Windows.Forms.Label();
-            this.AssessmentLabel3 = new System.Windows.Forms.Label();
-            this.ModuleLabel2 = new System.Windows.Forms.Label();
-            this.DueDateLabel2 = new System.Windows.Forms.Label();
-            this.StatusLabel2 = new System.Windows.Forms.Label();
-            this.ModuleLabel3 = new System.Windows.Forms.Label();
-            this.DueDateLabel3 = new System.Windows.Forms.Label();
-            this.StatusLabel3 = new System.Windows.Forms.Label();
-            this.AssessmentLabel4 = new System.Windows.Forms.Label();
-            this.ModuleLabel4 = new System.Windows.Forms.Label();
-            this.DueDateLabel4 = new System.Windows.Forms.Label();
-            this.StatusLabel4 = new System.Windows.Forms.Label();
-            this.AssessmentLabel5 = new System.Windows.Forms.Label();
-            this.ModuleLabel5 = new System.Windows.Forms.Label();
-            this.DueDateLabel5 = new System.Windows.Forms.Label();
-            this.StatusLabel5 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BackButtonPictureBox)).BeginInit();
             this.SuspendLayout();
@@ -79,6 +79,7 @@
             // 
             // tableLayoutPanel1
             // 
+            this.tableLayoutPanel1.BackColor = System.Drawing.Color.AliceBlue;
             this.tableLayoutPanel1.ColumnCount = 5;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
@@ -122,6 +123,211 @@
             this.tableLayoutPanel1.TabIndex = 3;
             this.tableLayoutPanel1.Visible = false;
             this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
+            // 
+            // StatusLabel5
+            // 
+            this.StatusLabel5.AutoSize = true;
+            this.StatusLabel5.Location = new System.Drawing.Point(354, 264);
+            this.StatusLabel5.Name = "StatusLabel5";
+            this.StatusLabel5.Size = new System.Drawing.Size(0, 13);
+            this.StatusLabel5.TabIndex = 43;
+            // 
+            // DueDateLabel5
+            // 
+            this.DueDateLabel5.AutoSize = true;
+            this.DueDateLabel5.Location = new System.Drawing.Point(237, 264);
+            this.DueDateLabel5.Name = "DueDateLabel5";
+            this.DueDateLabel5.Size = new System.Drawing.Size(0, 13);
+            this.DueDateLabel5.TabIndex = 42;
+            // 
+            // ModuleLabel5
+            // 
+            this.ModuleLabel5.AutoSize = true;
+            this.ModuleLabel5.Location = new System.Drawing.Point(120, 264);
+            this.ModuleLabel5.Name = "ModuleLabel5";
+            this.ModuleLabel5.Size = new System.Drawing.Size(0, 13);
+            this.ModuleLabel5.TabIndex = 41;
+            // 
+            // AssessmentLabel5
+            // 
+            this.AssessmentLabel5.AutoSize = true;
+            this.AssessmentLabel5.Location = new System.Drawing.Point(3, 264);
+            this.AssessmentLabel5.Name = "AssessmentLabel5";
+            this.AssessmentLabel5.Size = new System.Drawing.Size(0, 13);
+            this.AssessmentLabel5.TabIndex = 40;
+            // 
+            // StatusLabel4
+            // 
+            this.StatusLabel4.AutoSize = true;
+            this.StatusLabel4.Location = new System.Drawing.Point(354, 198);
+            this.StatusLabel4.Name = "StatusLabel4";
+            this.StatusLabel4.Size = new System.Drawing.Size(0, 13);
+            this.StatusLabel4.TabIndex = 39;
+            // 
+            // DueDateLabel4
+            // 
+            this.DueDateLabel4.AutoSize = true;
+            this.DueDateLabel4.Location = new System.Drawing.Point(237, 198);
+            this.DueDateLabel4.Name = "DueDateLabel4";
+            this.DueDateLabel4.Size = new System.Drawing.Size(0, 13);
+            this.DueDateLabel4.TabIndex = 38;
+            // 
+            // ModuleLabel4
+            // 
+            this.ModuleLabel4.AutoSize = true;
+            this.ModuleLabel4.Location = new System.Drawing.Point(120, 198);
+            this.ModuleLabel4.Name = "ModuleLabel4";
+            this.ModuleLabel4.Size = new System.Drawing.Size(0, 13);
+            this.ModuleLabel4.TabIndex = 37;
+            // 
+            // AssessmentLabel4
+            // 
+            this.AssessmentLabel4.AutoSize = true;
+            this.AssessmentLabel4.Location = new System.Drawing.Point(3, 198);
+            this.AssessmentLabel4.Name = "AssessmentLabel4";
+            this.AssessmentLabel4.Size = new System.Drawing.Size(0, 13);
+            this.AssessmentLabel4.TabIndex = 36;
+            // 
+            // StatusLabel3
+            // 
+            this.StatusLabel3.AutoSize = true;
+            this.StatusLabel3.Location = new System.Drawing.Point(354, 132);
+            this.StatusLabel3.Name = "StatusLabel3";
+            this.StatusLabel3.Size = new System.Drawing.Size(0, 13);
+            this.StatusLabel3.TabIndex = 35;
+            // 
+            // DueDateLabel3
+            // 
+            this.DueDateLabel3.AutoSize = true;
+            this.DueDateLabel3.Location = new System.Drawing.Point(237, 132);
+            this.DueDateLabel3.Name = "DueDateLabel3";
+            this.DueDateLabel3.Size = new System.Drawing.Size(0, 13);
+            this.DueDateLabel3.TabIndex = 34;
+            // 
+            // ModuleLabel3
+            // 
+            this.ModuleLabel3.AutoSize = true;
+            this.ModuleLabel3.Location = new System.Drawing.Point(120, 132);
+            this.ModuleLabel3.Name = "ModuleLabel3";
+            this.ModuleLabel3.Size = new System.Drawing.Size(0, 13);
+            this.ModuleLabel3.TabIndex = 33;
+            // 
+            // StatusLabel2
+            // 
+            this.StatusLabel2.AutoSize = true;
+            this.StatusLabel2.Location = new System.Drawing.Point(354, 66);
+            this.StatusLabel2.Name = "StatusLabel2";
+            this.StatusLabel2.Size = new System.Drawing.Size(0, 13);
+            this.StatusLabel2.TabIndex = 32;
+            // 
+            // DueDateLabel2
+            // 
+            this.DueDateLabel2.AutoSize = true;
+            this.DueDateLabel2.Location = new System.Drawing.Point(237, 66);
+            this.DueDateLabel2.Name = "DueDateLabel2";
+            this.DueDateLabel2.Size = new System.Drawing.Size(0, 13);
+            this.DueDateLabel2.TabIndex = 31;
+            // 
+            // ModuleLabel2
+            // 
+            this.ModuleLabel2.AutoSize = true;
+            this.ModuleLabel2.Location = new System.Drawing.Point(120, 66);
+            this.ModuleLabel2.Name = "ModuleLabel2";
+            this.ModuleLabel2.Size = new System.Drawing.Size(0, 13);
+            this.ModuleLabel2.TabIndex = 30;
+            // 
+            // AssessmentLabel2
+            // 
+            this.AssessmentLabel2.AutoSize = true;
+            this.AssessmentLabel2.Location = new System.Drawing.Point(3, 66);
+            this.AssessmentLabel2.Name = "AssessmentLabel2";
+            this.AssessmentLabel2.Size = new System.Drawing.Size(0, 13);
+            this.AssessmentLabel2.TabIndex = 28;
+            // 
+            // StatusLabel1
+            // 
+            this.StatusLabel1.AutoSize = true;
+            this.StatusLabel1.Location = new System.Drawing.Point(354, 0);
+            this.StatusLabel1.Name = "StatusLabel1";
+            this.StatusLabel1.Size = new System.Drawing.Size(0, 13);
+            this.StatusLabel1.TabIndex = 27;
+            // 
+            // DueDateLabel1
+            // 
+            this.DueDateLabel1.AutoSize = true;
+            this.DueDateLabel1.Location = new System.Drawing.Point(237, 0);
+            this.DueDateLabel1.Name = "DueDateLabel1";
+            this.DueDateLabel1.Size = new System.Drawing.Size(0, 13);
+            this.DueDateLabel1.TabIndex = 7;
+            // 
+            // ModuleLabel1
+            // 
+            this.ModuleLabel1.AutoSize = true;
+            this.ModuleLabel1.Location = new System.Drawing.Point(120, 0);
+            this.ModuleLabel1.Name = "ModuleLabel1";
+            this.ModuleLabel1.Size = new System.Drawing.Size(0, 13);
+            this.ModuleLabel1.TabIndex = 6;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(471, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(471, 69);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(471, 135);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "button3";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(471, 201);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 3;
+            this.button4.Text = "button4";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(471, 267);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(75, 23);
+            this.button5.TabIndex = 4;
+            this.button5.Text = "button5";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // AssessmentLabel1
+            // 
+            this.AssessmentLabel1.AutoSize = true;
+            this.AssessmentLabel1.Location = new System.Drawing.Point(3, 0);
+            this.AssessmentLabel1.Name = "AssessmentLabel1";
+            this.AssessmentLabel1.Size = new System.Drawing.Size(0, 13);
+            this.AssessmentLabel1.TabIndex = 5;
+            // 
+            // AssessmentLabel3
+            // 
+            this.AssessmentLabel3.AutoSize = true;
+            this.AssessmentLabel3.Location = new System.Drawing.Point(3, 132);
+            this.AssessmentLabel3.Name = "AssessmentLabel3";
+            this.AssessmentLabel3.Size = new System.Drawing.Size(0, 13);
+            this.AssessmentLabel3.TabIndex = 29;
             // 
             // BackButton
             // 
@@ -188,211 +394,6 @@
             this.StatusLabel.TabIndex = 26;
             this.StatusLabel.Text = "Status";
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(471, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(471, 69);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(471, 135);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(471, 201);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(471, 267);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // AssessmentLabel1
-            // 
-            this.AssessmentLabel1.AutoSize = true;
-            this.AssessmentLabel1.Location = new System.Drawing.Point(3, 0);
-            this.AssessmentLabel1.Name = "AssessmentLabel1";
-            this.AssessmentLabel1.Size = new System.Drawing.Size(0, 13);
-            this.AssessmentLabel1.TabIndex = 5;
-            // 
-            // ModuleLabel1
-            // 
-            this.ModuleLabel1.AutoSize = true;
-            this.ModuleLabel1.Location = new System.Drawing.Point(120, 0);
-            this.ModuleLabel1.Name = "ModuleLabel1";
-            this.ModuleLabel1.Size = new System.Drawing.Size(0, 13);
-            this.ModuleLabel1.TabIndex = 6;
-            // 
-            // DueDateLabel1
-            // 
-            this.DueDateLabel1.AutoSize = true;
-            this.DueDateLabel1.Location = new System.Drawing.Point(237, 0);
-            this.DueDateLabel1.Name = "DueDateLabel1";
-            this.DueDateLabel1.Size = new System.Drawing.Size(0, 13);
-            this.DueDateLabel1.TabIndex = 7;
-            // 
-            // StatusLabel1
-            // 
-            this.StatusLabel1.AutoSize = true;
-            this.StatusLabel1.Location = new System.Drawing.Point(354, 0);
-            this.StatusLabel1.Name = "StatusLabel1";
-            this.StatusLabel1.Size = new System.Drawing.Size(0, 13);
-            this.StatusLabel1.TabIndex = 27;
-            // 
-            // AssessmentLabel2
-            // 
-            this.AssessmentLabel2.AutoSize = true;
-            this.AssessmentLabel2.Location = new System.Drawing.Point(3, 66);
-            this.AssessmentLabel2.Name = "AssessmentLabel2";
-            this.AssessmentLabel2.Size = new System.Drawing.Size(0, 13);
-            this.AssessmentLabel2.TabIndex = 28;
-            // 
-            // AssessmentLabel3
-            // 
-            this.AssessmentLabel3.AutoSize = true;
-            this.AssessmentLabel3.Location = new System.Drawing.Point(3, 132);
-            this.AssessmentLabel3.Name = "AssessmentLabel3";
-            this.AssessmentLabel3.Size = new System.Drawing.Size(0, 13);
-            this.AssessmentLabel3.TabIndex = 29;
-            // 
-            // ModuleLabel2
-            // 
-            this.ModuleLabel2.AutoSize = true;
-            this.ModuleLabel2.Location = new System.Drawing.Point(120, 66);
-            this.ModuleLabel2.Name = "ModuleLabel2";
-            this.ModuleLabel2.Size = new System.Drawing.Size(0, 13);
-            this.ModuleLabel2.TabIndex = 30;
-            // 
-            // DueDateLabel2
-            // 
-            this.DueDateLabel2.AutoSize = true;
-            this.DueDateLabel2.Location = new System.Drawing.Point(237, 66);
-            this.DueDateLabel2.Name = "DueDateLabel2";
-            this.DueDateLabel2.Size = new System.Drawing.Size(0, 13);
-            this.DueDateLabel2.TabIndex = 31;
-            // 
-            // StatusLabel2
-            // 
-            this.StatusLabel2.AutoSize = true;
-            this.StatusLabel2.Location = new System.Drawing.Point(354, 66);
-            this.StatusLabel2.Name = "StatusLabel2";
-            this.StatusLabel2.Size = new System.Drawing.Size(0, 13);
-            this.StatusLabel2.TabIndex = 32;
-            // 
-            // ModuleLabel3
-            // 
-            this.ModuleLabel3.AutoSize = true;
-            this.ModuleLabel3.Location = new System.Drawing.Point(120, 132);
-            this.ModuleLabel3.Name = "ModuleLabel3";
-            this.ModuleLabel3.Size = new System.Drawing.Size(0, 13);
-            this.ModuleLabel3.TabIndex = 33;
-            // 
-            // DueDateLabel3
-            // 
-            this.DueDateLabel3.AutoSize = true;
-            this.DueDateLabel3.Location = new System.Drawing.Point(237, 132);
-            this.DueDateLabel3.Name = "DueDateLabel3";
-            this.DueDateLabel3.Size = new System.Drawing.Size(0, 13);
-            this.DueDateLabel3.TabIndex = 34;
-            // 
-            // StatusLabel3
-            // 
-            this.StatusLabel3.AutoSize = true;
-            this.StatusLabel3.Location = new System.Drawing.Point(354, 132);
-            this.StatusLabel3.Name = "StatusLabel3";
-            this.StatusLabel3.Size = new System.Drawing.Size(0, 13);
-            this.StatusLabel3.TabIndex = 35;
-            // 
-            // AssessmentLabel4
-            // 
-            this.AssessmentLabel4.AutoSize = true;
-            this.AssessmentLabel4.Location = new System.Drawing.Point(3, 198);
-            this.AssessmentLabel4.Name = "AssessmentLabel4";
-            this.AssessmentLabel4.Size = new System.Drawing.Size(0, 13);
-            this.AssessmentLabel4.TabIndex = 36;
-            // 
-            // ModuleLabel4
-            // 
-            this.ModuleLabel4.AutoSize = true;
-            this.ModuleLabel4.Location = new System.Drawing.Point(120, 198);
-            this.ModuleLabel4.Name = "ModuleLabel4";
-            this.ModuleLabel4.Size = new System.Drawing.Size(0, 13);
-            this.ModuleLabel4.TabIndex = 37;
-            // 
-            // DueDateLabel4
-            // 
-            this.DueDateLabel4.AutoSize = true;
-            this.DueDateLabel4.Location = new System.Drawing.Point(237, 198);
-            this.DueDateLabel4.Name = "DueDateLabel4";
-            this.DueDateLabel4.Size = new System.Drawing.Size(0, 13);
-            this.DueDateLabel4.TabIndex = 38;
-            // 
-            // StatusLabel4
-            // 
-            this.StatusLabel4.AutoSize = true;
-            this.StatusLabel4.Location = new System.Drawing.Point(354, 198);
-            this.StatusLabel4.Name = "StatusLabel4";
-            this.StatusLabel4.Size = new System.Drawing.Size(0, 13);
-            this.StatusLabel4.TabIndex = 39;
-            // 
-            // AssessmentLabel5
-            // 
-            this.AssessmentLabel5.AutoSize = true;
-            this.AssessmentLabel5.Location = new System.Drawing.Point(3, 264);
-            this.AssessmentLabel5.Name = "AssessmentLabel5";
-            this.AssessmentLabel5.Size = new System.Drawing.Size(0, 13);
-            this.AssessmentLabel5.TabIndex = 40;
-            // 
-            // ModuleLabel5
-            // 
-            this.ModuleLabel5.AutoSize = true;
-            this.ModuleLabel5.Location = new System.Drawing.Point(120, 264);
-            this.ModuleLabel5.Name = "ModuleLabel5";
-            this.ModuleLabel5.Size = new System.Drawing.Size(0, 13);
-            this.ModuleLabel5.TabIndex = 41;
-            // 
-            // DueDateLabel5
-            // 
-            this.DueDateLabel5.AutoSize = true;
-            this.DueDateLabel5.Location = new System.Drawing.Point(237, 264);
-            this.DueDateLabel5.Name = "DueDateLabel5";
-            this.DueDateLabel5.Size = new System.Drawing.Size(0, 13);
-            this.DueDateLabel5.TabIndex = 42;
-            // 
-            // StatusLabel5
-            // 
-            this.StatusLabel5.AutoSize = true;
-            this.StatusLabel5.Location = new System.Drawing.Point(354, 264);
-            this.StatusLabel5.Name = "StatusLabel5";
-            this.StatusLabel5.Size = new System.Drawing.Size(0, 13);
-            this.StatusLabel5.TabIndex = 43;
-            // 
             // MyAssessments
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -409,7 +410,7 @@
             this.Controls.Add(this.MyAssessmentsLabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "MyAssessments";
-            this.Text = "MyAssessments";
+            this.Text = "My Assessments";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BackButtonPictureBox)).EndInit();
