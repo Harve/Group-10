@@ -10,16 +10,18 @@ namespace SQLDatabase
     public static class InsertIntoDatabase
     {
 
-        public static void InsertIntoUser(string id,string firstname,string surname, string role)
+        public static void InsertIntoUser(string id,string password,string firstname,string surname, string role)
         {
+            password = Encryption.Encrypt(password);
             SQLiteConnection m_dbConnection = new SQLiteConnection("Data Source=Database.sqlite;Version=3;");
             m_dbConnection.Open();
 
             using (SQLiteCommand command = new SQLiteCommand(m_dbConnection))
             {
                 command.CommandText =
-                    "insert into user (userid,firstname,surname,role) values (@id,@fname,@sname,@role)";
+                    "insert into user (userid,password,firstname,surname,role) values (@id,@password,@fname,@sname,@role)";
                 command.Parameters.AddWithValue("@id", id);
+                command.Parameters.AddWithValue("@password", password);
                 command.Parameters.AddWithValue("@fname", firstname);
                 command.Parameters.AddWithValue("@sname", surname);
                 command.Parameters.AddWithValue("@role", role);
