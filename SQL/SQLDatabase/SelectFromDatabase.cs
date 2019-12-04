@@ -43,6 +43,7 @@ namespace SQLDatabase
             while (rdr.Read())
             {
                 string userid =  rdr.GetString(0);
+                string unencrypted = rdr.GetString(1);
                 string password = Encryption.Decrypt(rdr.GetString(1));
                 string firstname = rdr.GetString(2);
                 string surname = rdr.GetString(3);

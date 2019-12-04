@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApp1
+﻿namespace UserInterface
 {
     partial class LogOnForm
     {
@@ -35,6 +35,8 @@
             this.userIdPictureBox = new System.Windows.Forms.PictureBox();
             this.passwordPictureBox = new System.Windows.Forms.PictureBox();
             this.uohLogoPictureBox = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.headerPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userIdPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.passwordPictureBox)).BeginInit();
@@ -47,15 +49,16 @@
             this.userIdTextBox.Name = "userIdTextBox";
             this.userIdTextBox.Size = new System.Drawing.Size(172, 20);
             this.userIdTextBox.TabIndex = 0;
-            this.userIdTextBox.Text = "User ID";
+            this.userIdTextBox.TextChanged += new System.EventHandler(this.userIdTextBox_TextChanged);
             // 
             // passwordTextBox
             // 
             this.passwordTextBox.Location = new System.Drawing.Point(245, 239);
             this.passwordTextBox.Name = "passwordTextBox";
+            this.passwordTextBox.PasswordChar = '*';
             this.passwordTextBox.Size = new System.Drawing.Size(172, 20);
             this.passwordTextBox.TabIndex = 1;
-            this.passwordTextBox.Text = "Password";
+            this.passwordTextBox.UseSystemPasswordChar = true;
             this.passwordTextBox.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // logOnButton
@@ -64,7 +67,7 @@
             this.logOnButton.Name = "logOnButton";
             this.logOnButton.Size = new System.Drawing.Size(59, 25);
             this.logOnButton.TabIndex = 2;
-            this.logOnButton.Text = "Log-On";
+            this.logOnButton.Text = "Login";
             this.logOnButton.UseVisualStyleBackColor = true;
             this.logOnButton.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -84,6 +87,7 @@
             this.userIdPictureBox.Size = new System.Drawing.Size(33, 20);
             this.userIdPictureBox.TabIndex = 4;
             this.userIdPictureBox.TabStop = false;
+            this.userIdPictureBox.Click += new System.EventHandler(this.userIdPictureBox_Click);
             // 
             // passwordPictureBox
             // 
@@ -101,11 +105,33 @@
             this.uohLogoPictureBox.TabIndex = 6;
             this.uohLogoPictureBox.TabStop = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(186, 202);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(43, 13);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "User ID";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(186, 242);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(53, 13);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "Password";
+            // 
             // LogOnForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(664, 484);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.uohLogoPictureBox);
             this.Controls.Add(this.passwordPictureBox);
             this.Controls.Add(this.userIdPictureBox);
@@ -135,6 +161,8 @@
         private System.Windows.Forms.PictureBox userIdPictureBox;
         private System.Windows.Forms.PictureBox passwordPictureBox;
         private System.Windows.Forms.PictureBox uohLogoPictureBox;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
 

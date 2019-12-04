@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApp1
+﻿namespace UserInterface
 {
     partial class HomeForm
     {
@@ -109,6 +109,7 @@
             this.LogOutButton.TabIndex = 5;
             this.LogOutButton.Text = "Log Out";
             this.LogOutButton.UseVisualStyleBackColor = true;
+            this.LogOutButton.Click += new System.EventHandler(this.LogOutButton_Click);
             // 
             // NotificationButton
             // 
@@ -123,6 +124,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.AliceBlue;
             this.pictureBox1.Location = new System.Drawing.Point(258, 134);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(63, 58);
@@ -189,7 +191,7 @@
             this.Controls.Add(this.Home);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "HomeForm";
-            this.Text = "Form1";
+            this.Text = "Home";
             this.Load += new System.EventHandler(this.HomeForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

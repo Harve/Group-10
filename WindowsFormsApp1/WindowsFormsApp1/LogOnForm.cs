@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsApp1
+namespace UserInterface
 {
     public partial class LogOnForm : Form
     {
@@ -30,7 +30,16 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            if(SQLDatabase.ManageDatabase.Logon(userIdTextBox.Text, passwordTextBox.Text) == true)
+            {
+                HomeForm homeForm = new HomeForm(userIdTextBox.Text);
+                this.Hide();
+                homeForm.Show();
+            }
+            else
+            {
+                MessageBox.Show("User ID or Password incorrect.");
+            }
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
@@ -39,6 +48,21 @@ namespace WindowsFormsApp1
         }
 
         private void headerPictureBox_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void userIdPictureBox_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void userIdTextBox_TextChanged(object sender, EventArgs e)
         {
 
         }

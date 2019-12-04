@@ -7,13 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Backbone;
 
-namespace WindowsFormsApp1
+namespace UserInterface
 {
     public partial class HomeForm : Form
     {
-        public HomeForm()
+        public User CurrentUser;
+        public HomeForm(string userid)
         {
+            CurrentUser = SQLDatabase.SelectFromDatabase.allUsers.Find(x => x.id.Contains(userid));
             this.BackColor = System.Drawing.Color.AliceBlue;
             InitializeComponent();
         }
@@ -34,6 +37,18 @@ namespace WindowsFormsApp1
         }
 
         private void HomeForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LogOutButton_Click(object sender, EventArgs e)
+        {
+            LogOnForm logOnForm = new LogOnForm();
+            this.Hide();
+            logOnForm.Show();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
         {
 
         }

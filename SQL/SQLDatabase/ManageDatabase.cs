@@ -8,7 +8,7 @@ using System.IO;
 
 namespace SQLDatabase
 {
-    class ManageDatabase
+    public class ManageDatabase
     {
         public static void CreateDatabase()
         {
@@ -54,6 +54,43 @@ namespace SQLDatabase
             command = new SQLiteCommand(sql, m_dbConnection);
             command.ExecuteNonQuery();
             m_dbConnection.Close();
+        }
+
+        public static bool Logon(string userid,string password)
+        {
+            if(userid == "" || password == "")
+            {
+                return false;
+            }
+            string encryptedPassword;
+            
+
+            SQLiteConnection m_dbConnection = new SQLiteConnection("Data Source=Database.sqlite;Version=3;");
+            m_dbConnection.Open();
+
+            encryptedPassword = Encryption.Encrypt(password);
+
+            using (var cmd = new SQLiteCommand("select * from user where userid =@userid and password = @password", m_dbConnection))
+            {
+                cmd.Parameters.AddWithValue("@userid", userid);
+                cmd.Parameters.AddWithValue("@password", encryptedPassword);
+                using (var reader = cmd.ExecuteReader())
+                {
+                    var count = 0;
+                    while (reader.Read())
+                    {
+                        count = count + 1;
+                    }
+                    if (count == 1)
+                    {
+                        return true;
+                    }
+                    else 
+                    {
+                        return false;
+                    }
+                }
+            }
         }
     }
 }

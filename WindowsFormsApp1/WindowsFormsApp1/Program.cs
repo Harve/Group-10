@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Backbone;
 
-namespace WindowsFormsApp1
+namespace UserInterface
 {
     static class Program
     {
@@ -15,11 +15,11 @@ namespace WindowsFormsApp1
         [STAThread]
         static void Main()
         {
-            SQLDatabase.SelectFromDatabase.LoadDatabase();
             
+            SQLDatabase.SelectFromDatabase.LoadDatabase();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new HomeForm());
+            Application.Run(new LogOnForm());
         }
     }
 }
