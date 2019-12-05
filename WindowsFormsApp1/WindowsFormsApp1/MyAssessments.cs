@@ -7,13 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Backbone;
 
 namespace UserInterface
 {
     public partial class MyAssessments : Form
     {
-        public MyAssessments()
+        public User CurrentUser;
+        public MyAssessments(User user)
         {
+            CurrentUser = user;
             InitializeComponent();
         }
 
@@ -35,6 +38,13 @@ namespace UserInterface
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void BackButton_Click(object sender, EventArgs e)
+        {
+            HomeForm homeForm = new HomeForm(CurrentUser);
+            this.Hide();
+            homeForm.Show();
         }
     }
 }

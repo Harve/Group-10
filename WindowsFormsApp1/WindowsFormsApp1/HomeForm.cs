@@ -13,12 +13,36 @@ namespace UserInterface
 {
     public partial class HomeForm : Form
     {
+
         public User CurrentUser;
+
         public HomeForm(string userid)
         {
+           
             CurrentUser = SQLDatabase.SelectFromDatabase.allUsers.Find(x => x.id.Contains(userid));
+         
+            
             this.BackColor = System.Drawing.Color.AliceBlue;
             InitializeComponent();
+            label1.Text = "Welcome " + CurrentUser.firstname + " " + CurrentUser.surname;
+            AdminButton.Hide();
+            if(CurrentUser.role == "Admin")
+            {
+                AdminButton.Show();
+            }
+        }
+
+        public HomeForm(User user)
+        {
+            CurrentUser = user;
+            this.BackColor = System.Drawing.Color.AliceBlue;
+            InitializeComponent();
+            label1.Text = "Welcome " + CurrentUser.firstname + " " + CurrentUser.surname;
+            AdminButton.Hide();
+            if (CurrentUser.role == "Admin")
+            {
+                AdminButton.Show();
+            }
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -51,6 +75,27 @@ namespace UserInterface
         private void label3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void CalendarButton_Click(object sender, EventArgs e)
+        {
+            Calendar calendar = new Calendar(CurrentUser);
+            this.Hide();
+            calendar.Show();
+        }
+
+        private void AdminButton_Click(object sender, EventArgs e)
+        {
+            Administrator administrator = new Administrator(CurrentUser);
+            this.Hide();
+            administrator.Show();
+        }
+
+        private void MyAssessmentsButton_Click(object sender, EventArgs e)
+        {
+            MyAssessments myAssessments = new MyAssessments(CurrentUser);
+            this.Hide();
+            myAssessments.Show();
         }
     }
 }
