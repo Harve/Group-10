@@ -41,6 +41,7 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -79,6 +80,7 @@
             this.MyAssessmentsButton.TabIndex = 2;
             this.MyAssessmentsButton.Text = "My Assessments";
             this.MyAssessmentsButton.UseVisualStyleBackColor = true;
+            this.MyAssessmentsButton.Click += new System.EventHandler(this.MyAssessmentsButton_Click);
             // 
             // CalendarButton
             // 
@@ -89,6 +91,7 @@
             this.CalendarButton.TabIndex = 3;
             this.CalendarButton.Text = "Calendar";
             this.CalendarButton.UseVisualStyleBackColor = true;
+            this.CalendarButton.Click += new System.EventHandler(this.CalendarButton_Click);
             // 
             // AdminButton
             // 
@@ -99,6 +102,7 @@
             this.AdminButton.TabIndex = 4;
             this.AdminButton.Text = "Admin";
             this.AdminButton.UseVisualStyleBackColor = true;
+            this.AdminButton.Click += new System.EventHandler(this.AdminButton_Click);
             // 
             // LogOutButton
             // 
@@ -171,11 +175,21 @@
             this.pictureBox6.TabIndex = 12;
             this.pictureBox6.TabStop = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(642, 13);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "label1";
+            // 
             // HomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(790, 505);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
@@ -219,5 +233,6 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.Label label1;
     }
 }

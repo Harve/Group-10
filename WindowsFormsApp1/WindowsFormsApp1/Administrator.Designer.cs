@@ -183,6 +183,7 @@
             this.BackButton.TabIndex = 22;
             this.BackButton.Text = "Back";
             this.BackButton.UseVisualStyleBackColor = true;
+            this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
             // BackButtonPictureBox
             // 
