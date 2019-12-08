@@ -31,5 +31,12 @@ namespace UserInterface
             this.Hide();
             homeForm.Show();
         }
+
+        private void UsersButton_Click(object sender, EventArgs e)
+        {
+            AddUser addUser = new AddUser();
+            this.Hide();
+            addUser.Show();
+        }
     }
 }

@@ -106,3 +106,23 @@ C:\Users\harve\Documents\GitHub\Group-10\SQL\SQLDatabase\obj\Debug\SQLDatabase.c
 C:\Users\harve\Documents\GitHub\Group-10\SQL\SQLDatabase\obj\Debug\SQLDatabase.csproj.CopyComplete
 C:\Users\harve\Documents\GitHub\Group-10\SQL\SQLDatabase\obj\Debug\SQLDatabase.exe
 C:\Users\harve\Documents\GitHub\Group-10\SQL\SQLDatabase\obj\Debug\SQLDatabase.pdb
+C:\Users\Work Account\Documents\GitHub\Group-10\SQL\SQLDatabase\bin\Debug\SQLDatabase.exe.config
+C:\Users\Work Account\Documents\GitHub\Group-10\SQL\SQLDatabase\bin\Debug\SQLDatabase.exe
+C:\Users\Work Account\Documents\GitHub\Group-10\SQL\SQLDatabase\bin\Debug\SQLDatabase.pdb
+C:\Users\Work Account\Documents\GitHub\Group-10\SQL\SQLDatabase\bin\Debug\Backbone.exe
+C:\Users\Work Account\Documents\GitHub\Group-10\SQL\SQLDatabase\bin\Debug\EntityFramework.dll
+C:\Users\Work Account\Documents\GitHub\Group-10\SQL\SQLDatabase\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Work Account\Documents\GitHub\Group-10\SQL\SQLDatabase\bin\Debug\System.Data.SQLite.dll
+C:\Users\Work Account\Documents\GitHub\Group-10\SQL\SQLDatabase\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\Work Account\Documents\GitHub\Group-10\SQL\SQLDatabase\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\Work Account\Documents\GitHub\Group-10\SQL\SQLDatabase\bin\Debug\Backbone.pdb
+C:\Users\Work Account\Documents\GitHub\Group-10\SQL\SQLDatabase\bin\Debug\Backbone.exe.config
+C:\Users\Work Account\Documents\GitHub\Group-10\SQL\SQLDatabase\bin\Debug\EntityFramework.xml
+C:\Users\Work Account\Documents\GitHub\Group-10\SQL\SQLDatabase\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Work Account\Documents\GitHub\Group-10\SQL\SQLDatabase\bin\Debug\System.Data.SQLite.xml
+C:\Users\Work Account\Documents\GitHub\Group-10\SQL\SQLDatabase\bin\Debug\System.Data.SQLite.dll.config
+C:\Users\Work Account\Documents\GitHub\Group-10\SQL\SQLDatabase\obj\Debug\SQLDatabase.csprojAssemblyReference.cache
+C:\Users\Work Account\Documents\GitHub\Group-10\SQL\SQLDatabase\obj\Debug\SQLDatabase.csproj.CoreCompileInputs.cache
+C:\Users\Work Account\Documents\GitHub\Group-10\SQL\SQLDatabase\obj\Debug\SQLDatabase.csproj.CopyComplete
+C:\Users\Work Account\Documents\GitHub\Group-10\SQL\SQLDatabase\obj\Debug\SQLDatabase.exe
+C:\Users\Work Account\Documents\GitHub\Group-10\SQL\SQLDatabase\obj\Debug\SQLDatabase.pdb

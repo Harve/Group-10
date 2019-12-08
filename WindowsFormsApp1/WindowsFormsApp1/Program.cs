@@ -19,7 +19,7 @@ namespace UserInterface
             SQLDatabase.SelectFromDatabase.LoadDatabase();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LogOnForm());
+           Application.Run(new LogOnForm());
         }
     }
 }
