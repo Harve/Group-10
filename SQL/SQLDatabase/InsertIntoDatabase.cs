@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SQLite;
 
+
 namespace SQLDatabase
 {
     public static class InsertIntoDatabase
@@ -109,6 +110,24 @@ namespace SQLDatabase
                 command.Parameters.AddWithValue("@info", information);
                 command.Parameters.AddWithValue("@mid", moduleid);
                 command.Parameters.AddWithValue("@date", date);
+                command.ExecuteNonQuery();
+            }
+            m_dbConnection.Close();
+        }
+
+        public static void InsertIntoNotification(string message, string sender, string reciever)
+        {
+            string encryptedMessage = Encryption.Encrypt(message);
+            SQLiteConnection m_dbConnection = new SQLiteConnection("Data Source=Database.sqlite;Version=3;");
+            m_dbConnection.Open();
+            using (SQLiteCommand command = new SQLiteCommand(m_dbConnection))
+            {
+                command.CommandText = " insert into notification(notificationid,message,sentTime,senderid,recieverid) values(null,@msg,@time,@send,@recv)";
+
+                command.Parameters.AddWithValue("@msg", encryptedMessage);
+                command.Parameters.AddWithValue("@time", DateTime.Now);
+                command.Parameters.AddWithValue("@send", sender);
+                command.Parameters.AddWithValue("@recv", reciever);
                 command.ExecuteNonQuery();
             }
             m_dbConnection.Close();

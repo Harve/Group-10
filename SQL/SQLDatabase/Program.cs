@@ -12,9 +12,10 @@ namespace SQLDatabase
     {
         static void Main(string[] args)
         {
-           
-            
-            
+            Console.WriteLine("Please launch UserInterface.exe | Press any key to exit");
+            Console.ReadKey();
+
+
         }
 
        

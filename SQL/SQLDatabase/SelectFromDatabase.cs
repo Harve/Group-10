@@ -15,6 +15,7 @@ namespace SQLDatabase
         public static List<Module> allModules = new List<Module>();
         public static List<Assessment> allAssessments = new List<Assessment>();
         public static List<Deadline> allDeadlines = new List<Deadline>();
+        public static List<notification> allNotifications = new List<notification>();
         public static void LoadDatabase()
         {
            
@@ -25,6 +26,7 @@ namespace SQLDatabase
             allAssessments = ImportAssessments();
             ImportModuleTeams();
             allDeadlines = ImportDeadlines();
+            allNotifications = ImportNotifications();
         }
         public static List<User> ImportUsers()
         {
@@ -200,6 +202,39 @@ namespace SQLDatabase
             }
             m_dbConnection.Close();
             return deadlines;
+        }
+
+        public static List<notification> ImportNotifications()
+        {
+            List<notification> notifications = new List<notification>();
+            SQLiteConnection m_dbConnection = new SQLiteConnection("Data Source=Database.sqlite;Version=3;");
+            m_dbConnection.Open();
+
+            string sql = "select * from notification";
+
+            SQLiteCommand cmd = new SQLiteCommand(sql, m_dbConnection);
+
+            SQLiteDataReader rdr = cmd.ExecuteReader();
+
+            Console.WriteLine($"{rdr.GetName(0),-3} {rdr.GetName(1),-8} {rdr.GetName(2),8}");
+
+            while (rdr.Read())
+            {
+                string id = (rdr.GetInt32(0).ToString());
+                string message = Encryption.Decrypt(rdr.GetString(1));
+                DateTime date = rdr.GetDateTime(2);
+               
+                string sender = rdr.GetString(3);
+                string reciever = rdr.GetString(4);
+
+                notification notification = new notification(id,message,sender,reciever,date);
+
+                notifications.Add(notification);
+
+
+            }
+            m_dbConnection.Close();
+            return notifications;
         }
     }
 }

@@ -106,3 +106,46 @@ C:\Users\harve\Documents\GitHub\Group-10\SQL\SQLDatabase\obj\Debug\SQLDatabase.c
 C:\Users\harve\Documents\GitHub\Group-10\SQL\SQLDatabase\obj\Debug\SQLDatabase.csproj.CopyComplete
 C:\Users\harve\Documents\GitHub\Group-10\SQL\SQLDatabase\obj\Debug\SQLDatabase.exe
 C:\Users\harve\Documents\GitHub\Group-10\SQL\SQLDatabase\obj\Debug\SQLDatabase.pdb
+C:\Users\Work Account\Documents\GitHub\Group-10\SQL\SQLDatabase\bin\Debug\SQLDatabase.exe.config
+C:\Users\Work Account\Documents\GitHub\Group-10\SQL\SQLDatabase\bin\Debug\SQLDatabase.exe
+C:\Users\Work Account\Documents\GitHub\Group-10\SQL\SQLDatabase\bin\Debug\SQLDatabase.pdb
+C:\Users\Work Account\Documents\GitHub\Group-10\SQL\SQLDatabase\bin\Debug\Backbone.exe
+C:\Users\Work Account\Documents\GitHub\Group-10\SQL\SQLDatabase\bin\Debug\EntityFramework.dll
+C:\Users\Work Account\Documents\GitHub\Group-10\SQL\SQLDatabase\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Work Account\Documents\GitHub\Group-10\SQL\SQLDatabase\bin\Debug\System.Data.SQLite.dll
+C:\Users\Work Account\Documents\GitHub\Group-10\SQL\SQLDatabase\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\Work Account\Documents\GitHub\Group-10\SQL\SQLDatabase\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\Work Account\Documents\GitHub\Group-10\SQL\SQLDatabase\bin\Debug\Backbone.pdb
+C:\Users\Work Account\Documents\GitHub\Group-10\SQL\SQLDatabase\bin\Debug\Backbone.exe.config
+C:\Users\Work Account\Documents\GitHub\Group-10\SQL\SQLDatabase\bin\Debug\EntityFramework.xml
+C:\Users\Work Account\Documents\GitHub\Group-10\SQL\SQLDatabase\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Work Account\Documents\GitHub\Group-10\SQL\SQLDatabase\bin\Debug\System.Data.SQLite.xml
+C:\Users\Work Account\Documents\GitHub\Group-10\SQL\SQLDatabase\bin\Debug\System.Data.SQLite.dll.config
+C:\Users\Work Account\Documents\GitHub\Group-10\SQL\SQLDatabase\obj\Debug\SQLDatabase.csprojAssemblyReference.cache
+C:\Users\Work Account\Documents\GitHub\Group-10\SQL\SQLDatabase\obj\Debug\SQLDatabase.csproj.CoreCompileInputs.cache
+C:\Users\Work Account\Documents\GitHub\Group-10\SQL\SQLDatabase\obj\Debug\SQLDatabase.csproj.CopyComplete
+C:\Users\Work Account\Documents\GitHub\Group-10\SQL\SQLDatabase\obj\Debug\SQLDatabase.exe
+C:\Users\Work Account\Documents\GitHub\Group-10\SQL\SQLDatabase\obj\Debug\SQLDatabase.pdb
+<<<<<<< HEAD
+\\adir.hull.ac.uk\home\578\578647\Systems Analysis Project\Group-10-Harvey\SQL\SQLDatabase\bin\Debug\SQLDatabase.exe.config
+\\adir.hull.ac.uk\home\578\578647\Systems Analysis Project\Group-10-Harvey\SQL\SQLDatabase\bin\Debug\SQLDatabase.exe
+\\adir.hull.ac.uk\home\578\578647\Systems Analysis Project\Group-10-Harvey\SQL\SQLDatabase\bin\Debug\SQLDatabase.pdb
+\\adir.hull.ac.uk\home\578\578647\Systems Analysis Project\Group-10-Harvey\SQL\SQLDatabase\bin\Debug\Backbone.exe
+\\adir.hull.ac.uk\home\578\578647\Systems Analysis Project\Group-10-Harvey\SQL\SQLDatabase\bin\Debug\EntityFramework.dll
+\\adir.hull.ac.uk\home\578\578647\Systems Analysis Project\Group-10-Harvey\SQL\SQLDatabase\bin\Debug\EntityFramework.SqlServer.dll
+\\adir.hull.ac.uk\home\578\578647\Systems Analysis Project\Group-10-Harvey\SQL\SQLDatabase\bin\Debug\System.Data.SQLite.dll
+\\adir.hull.ac.uk\home\578\578647\Systems Analysis Project\Group-10-Harvey\SQL\SQLDatabase\bin\Debug\System.Data.SQLite.EF6.dll
+\\adir.hull.ac.uk\home\578\578647\Systems Analysis Project\Group-10-Harvey\SQL\SQLDatabase\bin\Debug\System.Data.SQLite.Linq.dll
+\\adir.hull.ac.uk\home\578\578647\Systems Analysis Project\Group-10-Harvey\SQL\SQLDatabase\bin\Debug\Backbone.pdb
+\\adir.hull.ac.uk\home\578\578647\Systems Analysis Project\Group-10-Harvey\SQL\SQLDatabase\bin\Debug\Backbone.exe.config
+\\adir.hull.ac.uk\home\578\578647\Systems Analysis Project\Group-10-Harvey\SQL\SQLDatabase\bin\Debug\EntityFramework.xml
+\\adir.hull.ac.uk\home\578\578647\Systems Analysis Project\Group-10-Harvey\SQL\SQLDatabase\bin\Debug\EntityFramework.SqlServer.xml
+\\adir.hull.ac.uk\home\578\578647\Systems Analysis Project\Group-10-Harvey\SQL\SQLDatabase\bin\Debug\System.Data.SQLite.xml
+\\adir.hull.ac.uk\home\578\578647\Systems Analysis Project\Group-10-Harvey\SQL\SQLDatabase\bin\Debug\System.Data.SQLite.dll.config
+\\adir.hull.ac.uk\home\578\578647\Systems Analysis Project\Group-10-Harvey\SQL\SQLDatabase\obj\Debug\SQLDatabase.csprojAssemblyReference.cache
+\\adir.hull.ac.uk\home\578\578647\Systems Analysis Project\Group-10-Harvey\SQL\SQLDatabase\obj\Debug\SQLDatabase.csproj.CoreCompileInputs.cache
+\\adir.hull.ac.uk\home\578\578647\Systems Analysis Project\Group-10-Harvey\SQL\SQLDatabase\obj\Debug\SQLDatabase.csproj.CopyComplete
+\\adir.hull.ac.uk\home\578\578647\Systems Analysis Project\Group-10-Harvey\SQL\SQLDatabase\obj\Debug\SQLDatabase.exe
+\\adir.hull.ac.uk\home\578\578647\Systems Analysis Project\Group-10-Harvey\SQL\SQLDatabase\obj\Debug\SQLDatabase.pdb
+=======
+>>>>>>> fc17483c90383cf60133e8e5c5929bf210b28308
