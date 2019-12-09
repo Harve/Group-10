@@ -22,6 +22,7 @@ C:\Users\Work Account\Documents\GitHub\Group-10\Backbone\Backbone\obj\Debug\Back
 C:\Users\Work Account\Documents\GitHub\Group-10\Backbone\Backbone\obj\Debug\Backbone.csproj.CopyComplete
 C:\Users\Work Account\Documents\GitHub\Group-10\Backbone\Backbone\obj\Debug\Backbone.exe
 C:\Users\Work Account\Documents\GitHub\Group-10\Backbone\Backbone\obj\Debug\Backbone.pdb
+<<<<<<< HEAD
 \\adir.hull.ac.uk\home\578\578647\Systems Analysis Project\Group-10-Harvey\Backbone\Backbone\bin\Debug\Backbone.exe.config
 \\adir.hull.ac.uk\home\578\578647\Systems Analysis Project\Group-10-Harvey\Backbone\Backbone\bin\Debug\Backbone.exe
 \\adir.hull.ac.uk\home\578\578647\Systems Analysis Project\Group-10-Harvey\Backbone\Backbone\bin\Debug\Backbone.pdb
@@ -34,3 +35,5 @@ C:\Users\Work Account\Documents\GitHub\Group-10\Backbone\Backbone\obj\Debug\Back
 \\adir.hull.ac.uk\home\578\578647\Systems Analysis Project\Group-10-Harvey\Backbone\Backbone\obj\Debug\Backbone.csproj.CopyComplete
 \\adir.hull.ac.uk\home\578\578647\Systems Analysis Project\Group-10-Harvey\Backbone\Backbone\obj\Debug\Backbone.exe
 \\adir.hull.ac.uk\home\578\578647\Systems Analysis Project\Group-10-Harvey\Backbone\Backbone\obj\Debug\Backbone.pdb
+=======
+>>>>>>> fc17483c90383cf60133e8e5c5929bf210b28308
