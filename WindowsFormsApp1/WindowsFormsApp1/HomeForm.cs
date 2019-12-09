@@ -52,12 +52,16 @@ namespace UserInterface
 
         private void CreateButton_Click(object sender, EventArgs e)
         {
-
+            CreateMenu createMenu = new CreateMenu(CurrentUser);
+            this.Hide();
+            createMenu.Show();
         }
 
         private void NotificationButton_Click(object sender, EventArgs e)
         {
-
+            Notifications notifications = new Notifications(CurrentUser);
+            this.Hide();
+            notifications.Show();
         }
 
         private void HomeForm_Load(object sender, EventArgs e)

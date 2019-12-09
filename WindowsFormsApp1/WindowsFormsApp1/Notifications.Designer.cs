@@ -35,6 +35,11 @@
             this.ActionsTitle = new System.Windows.Forms.Label();
             this.DeleteButton = new System.Windows.Forms.Button();
             this.MarkAsReadButton = new System.Windows.Forms.Button();
+            this.NotificationGrid = new System.Windows.Forms.DataGridView();
+            this.SendDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Message = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Sender = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.NotificationGrid)).BeginInit();
             this.SuspendLayout();
             // 
             // DateNotifiedTitle
@@ -106,12 +111,42 @@
             this.MarkAsReadButton.Text = "Mark as Read";
             this.MarkAsReadButton.UseVisualStyleBackColor = true;
             // 
+            // NotificationGrid
+            // 
+            this.NotificationGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.NotificationGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.SendDate,
+            this.Message,
+            this.Sender});
+            this.NotificationGrid.Location = new System.Drawing.Point(35, 116);
+            this.NotificationGrid.Name = "NotificationGrid";
+            this.NotificationGrid.Size = new System.Drawing.Size(493, 211);
+            this.NotificationGrid.TabIndex = 8;
+            this.NotificationGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // SendDate
+            // 
+            this.SendDate.HeaderText = "Date";
+            this.SendDate.Name = "SendDate";
+            // 
+            // Message
+            // 
+            this.Message.HeaderText = "Message";
+            this.Message.Name = "Message";
+            this.Message.Width = 250;
+            // 
+            // Sender
+            // 
+            this.Sender.HeaderText = "Sender";
+            this.Sender.Name = "Sender";
+            // 
             // Notifications
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(572, 481);
+            this.Controls.Add(this.NotificationGrid);
             this.Controls.Add(this.MarkAsReadButton);
             this.Controls.Add(this.DeleteButton);
             this.Controls.Add(this.ActionsTitle);
@@ -121,6 +156,7 @@
             this.Controls.Add(this.DateNotifiedTitle);
             this.Name = "Notifications";
             this.Text = "Notifications";
+            ((System.ComponentModel.ISupportInitialize)(this.NotificationGrid)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -135,5 +171,9 @@
         private System.Windows.Forms.Label ActionsTitle;
         private System.Windows.Forms.Button DeleteButton;
         private System.Windows.Forms.Button MarkAsReadButton;
+        private System.Windows.Forms.DataGridView NotificationGrid;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SendDate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Message;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Sender;
     }
 }

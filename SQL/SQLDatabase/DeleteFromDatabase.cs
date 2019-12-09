@@ -83,5 +83,17 @@ namespace SQLDatabase
             m_dbConnection.Close();
         }
 
+        public static void DeleteNotification(string id)
+        {
+            SQLiteConnection m_dbConnection = new SQLiteConnection("Data Source=Database.sqlite;Version=3;");
+            m_dbConnection.Open();
+
+            string sql = "delete from notification where notificationid =" + id;
+
+            SQLiteCommand command = new SQLiteCommand(sql, m_dbConnection);
+            command.ExecuteNonQuery();
+
+            m_dbConnection.Close();
+        }
     }
 }

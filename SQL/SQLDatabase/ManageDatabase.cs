@@ -53,6 +53,12 @@ namespace SQLDatabase
             sql = "create table deadline( moduleid varchar(8), information varchar(80), deadlinedate datetime)";
             command = new SQLiteCommand(sql, m_dbConnection);
             command.ExecuteNonQuery();
+
+            sql = "create table notification( notificationid INTEGER PRIMARY KEY AUTOINCREMENT, message varchar(640), sentTime datetime, senderid varchar(8), recieverid varchar(8))";
+            command = new SQLiteCommand(sql, m_dbConnection);
+            command.ExecuteNonQuery();
+
+            InsertIntoDatabase.InsertIntoUser("adminuser", "adminpassword", "Admin", "User", "Admin");
             m_dbConnection.Close();
         }
 
