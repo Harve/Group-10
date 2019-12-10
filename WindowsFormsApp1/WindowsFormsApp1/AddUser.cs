@@ -15,15 +15,10 @@ namespace UserInterface
 {
     public partial class AddUser : Form
     {
-<<<<<<< HEAD
         public User CurrentUser;
         public AddUser(User user)
         {
             CurrentUser = user;
-=======
-        public AddUser()
-        {
->>>>>>> fc17483c90383cf60133e8e5c5929bf210b28308
             InitializeComponent();
         }
 
@@ -69,7 +64,6 @@ namespace UserInterface
 
         private void Button2_Click(object sender, EventArgs e)
         {
-<<<<<<< HEAD
             Administrator adminForm = new Administrator(CurrentUser);
             this.Hide();
             adminForm.Show();
@@ -78,9 +72,6 @@ namespace UserInterface
         private void label6_Click(object sender, EventArgs e)
         {
 
-=======
-            
->>>>>>> fc17483c90383cf60133e8e5c5929bf210b28308
         }
     }
 

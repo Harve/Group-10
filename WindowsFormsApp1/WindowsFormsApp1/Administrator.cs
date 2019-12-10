@@ -34,11 +34,7 @@ namespace UserInterface
 
         private void UsersButton_Click(object sender, EventArgs e)
         {
-<<<<<<< HEAD
             AddUser addUser = new AddUser(CurrentUser);
-=======
-            AddUser addUser = new AddUser();
->>>>>>> fc17483c90383cf60133e8e5c5929bf210b28308
             this.Hide();
             addUser.Show();
         }
