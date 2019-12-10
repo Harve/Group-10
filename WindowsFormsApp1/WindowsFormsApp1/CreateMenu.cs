@@ -23,7 +23,9 @@ namespace UserInterface
 
         private void button3_Click(object sender, EventArgs e)
         {
-            
+            NewAssessment newAssessment = new NewAssessment(CurrentUser);
+            this.Hide();
+            newAssessment.Show();
         }
 
         private void button4_Click(object sender, EventArgs e)

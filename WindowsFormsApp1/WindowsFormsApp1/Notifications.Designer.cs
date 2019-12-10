@@ -28,10 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.DateNotifiedTitle = new System.Windows.Forms.Label();
-            this.DateNotifiedLabelBox = new System.Windows.Forms.Label();
-            this.ModuleTitle = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.ActionsTitle = new System.Windows.Forms.Label();
             this.DeleteButton = new System.Windows.Forms.Button();
             this.MarkAsReadButton = new System.Windows.Forms.Button();
@@ -39,49 +35,10 @@
             this.SendDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Message = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Sender = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.NotificationGrid)).BeginInit();
             this.SuspendLayout();
-            // 
-            // DateNotifiedTitle
-            // 
-            this.DateNotifiedTitle.AutoSize = true;
-            this.DateNotifiedTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.DateNotifiedTitle.Location = new System.Drawing.Point(43, 22);
-            this.DateNotifiedTitle.Name = "DateNotifiedTitle";
-            this.DateNotifiedTitle.Size = new System.Drawing.Size(90, 17);
-            this.DateNotifiedTitle.TabIndex = 0;
-            this.DateNotifiedTitle.Text = "Date Notified";
-            // 
-            // DateNotifiedLabelBox
-            // 
-            this.DateNotifiedLabelBox.AutoSize = true;
-            this.DateNotifiedLabelBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.DateNotifiedLabelBox.Location = new System.Drawing.Point(2, 60);
-            this.DateNotifiedLabelBox.Name = "DateNotifiedLabelBox";
-            this.DateNotifiedLabelBox.Size = new System.Drawing.Size(196, 17);
-            this.DateNotifiedLabelBox.TabIndex = 1;
-            this.DateNotifiedLabelBox.Text = "Placeholder Date Notified Box";
-            // 
-            // ModuleTitle
-            // 
-            this.ModuleTitle.AutoSize = true;
-            this.ModuleTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.ModuleTitle.Location = new System.Drawing.Point(272, 22);
-            this.ModuleTitle.Name = "ModuleTitle";
-            this.ModuleTitle.Size = new System.Drawing.Size(54, 17);
-            this.ModuleTitle.TabIndex = 2;
-            this.ModuleTitle.Text = "Module";
-            this.ModuleTitle.Click += new System.EventHandler(this.ModuleTitle_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label1.Location = new System.Drawing.Point(223, 60);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(160, 17);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Placeholder Module Box";
             // 
             // ActionsTitle
             // 
@@ -140,20 +97,37 @@
             this.Sender.HeaderText = "Sender";
             this.Sender.Name = "Sender";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(229, 33);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(65, 13);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "Notifications";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(35, 411);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "Home";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // Notifications
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(572, 481);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.NotificationGrid);
             this.Controls.Add(this.MarkAsReadButton);
             this.Controls.Add(this.DeleteButton);
             this.Controls.Add(this.ActionsTitle);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.ModuleTitle);
-            this.Controls.Add(this.DateNotifiedLabelBox);
-            this.Controls.Add(this.DateNotifiedTitle);
             this.Name = "Notifications";
             this.Text = "Notifications";
             ((System.ComponentModel.ISupportInitialize)(this.NotificationGrid)).EndInit();
@@ -163,11 +137,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label DateNotifiedTitle;
-        private System.Windows.Forms.Label DateNotifiedLabelBox;
-        private System.Windows.Forms.Label ModuleTitle;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label ActionsTitle;
         private System.Windows.Forms.Button DeleteButton;
         private System.Windows.Forms.Button MarkAsReadButton;
@@ -175,5 +144,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn SendDate;
         private System.Windows.Forms.DataGridViewTextBoxColumn Message;
         private System.Windows.Forms.DataGridViewTextBoxColumn Sender;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button1;
     }
 }

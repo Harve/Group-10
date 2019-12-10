@@ -1,6 +1,6 @@
 ﻿namespace UserInterface
 {
-    partial class CreateNewForm
+    partial class NewAssessment
     {
         /// <summary>
         /// Required designer variable.
@@ -38,17 +38,15 @@
             this.label1 = new System.Windows.Forms.Label();
             this.FileUploadTextBox = new System.Windows.Forms.TextBox();
             this.URLTextBox = new System.Windows.Forms.TextBox();
-            this.BrowseButton = new System.Windows.Forms.Button();
             this.UploadButton = new System.Windows.Forms.Button();
-            this.UploadedTextBox = new System.Windows.Forms.TextBox();
+            this.idTextBox = new System.Windows.Forms.TextBox();
             this.NameTextBox = new System.Windows.Forms.TextBox();
-            this.DescriptionTextBox = new System.Windows.Forms.TextBox();
-            this.ModuleListBox = new System.Windows.Forms.ListBox();
             this.ReleaseDateCalendar = new System.Windows.Forms.MonthCalendar();
             this.DueDateCalendar = new System.Windows.Forms.MonthCalendar();
             this.SubmitButton = new System.Windows.Forms.Button();
             this.BackButton = new System.Windows.Forms.Button();
             this.BackButtonPictureBox = new System.Windows.Forms.PictureBox();
+            this.ModuleDropDown = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.BackButtonPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,11 +54,11 @@
             // 
             this.CreateNewLable.AutoSize = true;
             this.CreateNewLable.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.CreateNewLable.Location = new System.Drawing.Point(312, 41);
+            this.CreateNewLable.Location = new System.Drawing.Point(245, 41);
             this.CreateNewLable.Name = "CreateNewLable";
-            this.CreateNewLable.Size = new System.Drawing.Size(158, 31);
+            this.CreateNewLable.Size = new System.Drawing.Size(314, 31);
             this.CreateNewLable.TabIndex = 1;
-            this.CreateNewLable.Text = "Create New";
+            this.CreateNewLable.Text = "Create New Assessment";
             this.CreateNewLable.Click += new System.EventHandler(this.Home_Click);
             // 
             // NameLabel
@@ -68,9 +66,9 @@
             this.NameLabel.AutoSize = true;
             this.NameLabel.Location = new System.Drawing.Point(130, 133);
             this.NameLabel.Name = "NameLabel";
-            this.NameLabel.Size = new System.Drawing.Size(35, 13);
+            this.NameLabel.Size = new System.Drawing.Size(77, 13);
             this.NameLabel.TabIndex = 2;
-            this.NameLabel.Text = "Name";
+            this.NameLabel.Text = "Assessment ID";
             // 
             // ModuleLabel
             // 
@@ -86,9 +84,9 @@
             this.DescriptionLabel.AutoSize = true;
             this.DescriptionLabel.Location = new System.Drawing.Point(130, 231);
             this.DescriptionLabel.Name = "DescriptionLabel";
-            this.DescriptionLabel.Size = new System.Drawing.Size(60, 13);
+            this.DescriptionLabel.Size = new System.Drawing.Size(35, 13);
             this.DescriptionLabel.TabIndex = 4;
-            this.DescriptionLabel.Text = "Description";
+            this.DescriptionLabel.Text = "Name";
             // 
             // ReleaseDateLabel
             // 
@@ -145,15 +143,6 @@
             this.URLTextBox.Size = new System.Drawing.Size(100, 20);
             this.URLTextBox.TabIndex = 10;
             // 
-            // BrowseButton
-            // 
-            this.BrowseButton.Location = new System.Drawing.Point(487, 372);
-            this.BrowseButton.Name = "BrowseButton";
-            this.BrowseButton.Size = new System.Drawing.Size(75, 23);
-            this.BrowseButton.TabIndex = 11;
-            this.BrowseButton.Text = "Browse...";
-            this.BrowseButton.UseVisualStyleBackColor = true;
-            // 
             // UploadButton
             // 
             this.UploadButton.Location = new System.Drawing.Point(594, 372);
@@ -162,37 +151,22 @@
             this.UploadButton.TabIndex = 12;
             this.UploadButton.Text = "Upload";
             this.UploadButton.UseVisualStyleBackColor = true;
+            this.UploadButton.Click += new System.EventHandler(this.UploadButton_Click);
             // 
-            // UploadedTextBox
+            // idTextBox
             // 
-            this.UploadedTextBox.Location = new System.Drawing.Point(487, 412);
-            this.UploadedTextBox.Name = "UploadedTextBox";
-            this.UploadedTextBox.ReadOnly = true;
-            this.UploadedTextBox.Size = new System.Drawing.Size(182, 20);
-            this.UploadedTextBox.TabIndex = 13;
+            this.idTextBox.Location = new System.Drawing.Point(206, 130);
+            this.idTextBox.Name = "idTextBox";
+            this.idTextBox.Size = new System.Drawing.Size(154, 20);
+            this.idTextBox.TabIndex = 14;
+            this.idTextBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
             // 
             // NameTextBox
             // 
-            this.NameTextBox.Location = new System.Drawing.Point(206, 130);
+            this.NameTextBox.Location = new System.Drawing.Point(206, 228);
             this.NameTextBox.Name = "NameTextBox";
-            this.NameTextBox.Size = new System.Drawing.Size(100, 20);
-            this.NameTextBox.TabIndex = 14;
-            this.NameTextBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
-            // 
-            // DescriptionTextBox
-            // 
-            this.DescriptionTextBox.Location = new System.Drawing.Point(206, 228);
-            this.DescriptionTextBox.Name = "DescriptionTextBox";
-            this.DescriptionTextBox.Size = new System.Drawing.Size(100, 20);
-            this.DescriptionTextBox.TabIndex = 15;
-            // 
-            // ModuleListBox
-            // 
-            this.ModuleListBox.FormattingEnabled = true;
-            this.ModuleListBox.Location = new System.Drawing.Point(206, 178);
-            this.ModuleListBox.Name = "ModuleListBox";
-            this.ModuleListBox.Size = new System.Drawing.Size(100, 17);
-            this.ModuleListBox.TabIndex = 16;
+            this.NameTextBox.Size = new System.Drawing.Size(165, 20);
+            this.NameTextBox.TabIndex = 15;
             // 
             // ReleaseDateCalendar
             // 
@@ -216,6 +190,7 @@
             this.SubmitButton.TabIndex = 19;
             this.SubmitButton.Text = "Submit";
             this.SubmitButton.UseVisualStyleBackColor = true;
+            this.SubmitButton.Click += new System.EventHandler(this.SubmitButton_Click);
             // 
             // BackButton
             // 
@@ -226,6 +201,7 @@
             this.BackButton.TabIndex = 20;
             this.BackButton.Text = "Back";
             this.BackButton.UseVisualStyleBackColor = true;
+            this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
             // BackButtonPictureBox
             // 
@@ -235,23 +211,29 @@
             this.BackButtonPictureBox.TabIndex = 21;
             this.BackButtonPictureBox.TabStop = false;
             // 
-            // CreateNewForm
+            // ModuleDropDown
+            // 
+            this.ModuleDropDown.FormattingEnabled = true;
+            this.ModuleDropDown.Location = new System.Drawing.Point(206, 178);
+            this.ModuleDropDown.Name = "ModuleDropDown";
+            this.ModuleDropDown.Size = new System.Drawing.Size(121, 21);
+            this.ModuleDropDown.TabIndex = 22;
+            // 
+            // NewAssessment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(761, 524);
+            this.Controls.Add(this.ModuleDropDown);
             this.Controls.Add(this.BackButtonPictureBox);
             this.Controls.Add(this.BackButton);
             this.Controls.Add(this.SubmitButton);
             this.Controls.Add(this.DueDateCalendar);
             this.Controls.Add(this.ReleaseDateCalendar);
-            this.Controls.Add(this.ModuleListBox);
-            this.Controls.Add(this.DescriptionTextBox);
             this.Controls.Add(this.NameTextBox);
-            this.Controls.Add(this.UploadedTextBox);
+            this.Controls.Add(this.idTextBox);
             this.Controls.Add(this.UploadButton);
-            this.Controls.Add(this.BrowseButton);
             this.Controls.Add(this.URLTextBox);
             this.Controls.Add(this.FileUploadTextBox);
             this.Controls.Add(this.label1);
@@ -262,7 +244,7 @@
             this.Controls.Add(this.ModuleLabel);
             this.Controls.Add(this.NameLabel);
             this.Controls.Add(this.CreateNewLable);
-            this.Name = "CreateNewForm";
+            this.Name = "NewAssessment";
             this.Text = "Create New Assessment";
             ((System.ComponentModel.ISupportInitialize)(this.BackButtonPictureBox)).EndInit();
             this.ResumeLayout(false);
@@ -282,16 +264,14 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox FileUploadTextBox;
         private System.Windows.Forms.TextBox URLTextBox;
-        private System.Windows.Forms.Button BrowseButton;
         private System.Windows.Forms.Button UploadButton;
-        private System.Windows.Forms.TextBox UploadedTextBox;
+        private System.Windows.Forms.TextBox idTextBox;
         private System.Windows.Forms.TextBox NameTextBox;
-        private System.Windows.Forms.TextBox DescriptionTextBox;
-        private System.Windows.Forms.ListBox ModuleListBox;
         private System.Windows.Forms.MonthCalendar ReleaseDateCalendar;
         private System.Windows.Forms.MonthCalendar DueDateCalendar;
         private System.Windows.Forms.Button SubmitButton;
         private System.Windows.Forms.Button BackButton;
         private System.Windows.Forms.PictureBox BackButtonPictureBox;
+        private System.Windows.Forms.ComboBox ModuleDropDown;
     }
 }

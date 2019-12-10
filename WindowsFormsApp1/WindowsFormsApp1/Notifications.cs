@@ -51,5 +51,12 @@ namespace UserInterface
         {
 
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            HomeForm homeForm = new HomeForm(CurrentUser);
+            this.Hide();
+            homeForm.Show();
+        }
     }
 }
