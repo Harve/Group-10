@@ -114,9 +114,6 @@
     <EmbeddedResource Include="CreateMenu.resx">
       <DependentUpon>CreateMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="New Assessment.resx">
-      <DependentUpon>NewAssessment.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="HomeForm.resx">
       <DependentUpon>HomeForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -125,6 +122,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MyAssessments.resx">
       <DependentUpon>MyAssessments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewAssessment.resx">
+      <DependentUpon>NewAssessment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Notifications.resx">
       <DependentUpon>Notifications.cs</DependentUpon>
