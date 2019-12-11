@@ -53,6 +53,7 @@ namespace UserInterface
                 }
                 SQLDatabase.InsertIntoDatabase.InsertIntoUser(id.Text, password.Text, firstname.Text, surname.Text, role.Text);
                 User NewUser = new User(id.Text, firstname.Text, surname.Text, role.Text);
+                SQLDatabase.SelectFromDatabase.allUsers.Add(NewUser);
                 id.Clear(); firstname.Clear(); surname.Clear(); password.Clear(); role.ResetText();
                 MessageBox.Show("User Added Sucessfully");
             }

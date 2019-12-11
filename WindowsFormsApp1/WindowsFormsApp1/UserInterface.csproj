@@ -94,6 +94,12 @@
     <Compile Include="MyAssessments.Designer.cs">
       <DependentUpon>MyAssessments.cs</DependentUpon>
     </Compile>
+    <Compile Include="NewModule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewModule.Designer.cs">
+      <DependentUpon>NewModule.cs</DependentUpon>
+    </Compile>
     <Compile Include="Notifications.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,6 +131,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="NewAssessment.resx">
       <DependentUpon>NewAssessment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewModule.resx">
+      <DependentUpon>NewModule.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Notifications.resx">
       <DependentUpon>Notifications.cs</DependentUpon>

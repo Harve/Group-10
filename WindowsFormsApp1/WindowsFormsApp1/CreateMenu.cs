@@ -34,5 +34,12 @@ namespace UserInterface
             this.Hide();
             homeForm.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            NewModule newModule = new NewModule(CurrentUser);
+            this.Hide();
+            newModule.Show();
+        }
     }
 }

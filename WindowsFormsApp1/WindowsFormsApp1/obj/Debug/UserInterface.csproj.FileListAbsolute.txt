@@ -81,3 +81,4 @@ C:\Users\harve\Documents\GitHub\Group-10\WindowsFormsApp1\WindowsFormsApp1\obj\D
 C:\Users\harve\Documents\GitHub\Group-10\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\UserInterface.exe
 C:\Users\harve\Documents\GitHub\Group-10\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\UserInterface.pdb
 C:\Users\harve\Documents\GitHub\Group-10\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\UserInterface.NewAssessment.resources
+C:\Users\harve\Documents\GitHub\Group-10\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\UserInterface.NewModule.resources
