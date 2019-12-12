@@ -41,5 +41,12 @@ namespace UserInterface
             this.Hide();
             newModule.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            NewProgramme newProgramme = new NewProgramme(CurrentUser);
+            this.Hide();
+            newProgramme.Show();
+        }
     }
 }

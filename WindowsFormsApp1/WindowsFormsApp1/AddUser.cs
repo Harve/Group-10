@@ -65,7 +65,7 @@ namespace UserInterface
 
         private void Button2_Click(object sender, EventArgs e)
         {
-            Administrator adminForm = new Administrator(CurrentUser);
+            UserMenu adminForm = new UserMenu(CurrentUser);
             this.Hide();
             adminForm.Show();
         }

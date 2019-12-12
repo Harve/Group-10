@@ -27,6 +27,21 @@ namespace SQLDatabase
             }
             m_dbConnection.Close();
         }
+        public static void UpdatePassword(string id, string password)
+        {
+            SQLiteConnection m_dbConnection = new SQLiteConnection("Data Source=Database.sqlite;Version=3;");
+            m_dbConnection.Open();
+            password = Encryption.Encrypt(password);
+            using (SQLiteCommand command = new SQLiteCommand(m_dbConnection))
+            {
+                command.CommandText =
+                    "update user set password = :password where userid=:id";
+                command.Parameters.Add("password", DbType.String).Value = password;
+                command.Parameters.Add("id", DbType.String).Value = id;
+                command.ExecuteNonQuery();
+            }
+            m_dbConnection.Close();
+        }
 
         public static void UpdateProgramme(string programmeid, string title, string userid)
         {

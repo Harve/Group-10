@@ -46,9 +46,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(352, 36);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(328, 36);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 13);
+            this.label1.Size = new System.Drawing.Size(118, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Add Module";
             // 
@@ -56,7 +57,7 @@
             // 
             this.ModuleID.Location = new System.Drawing.Point(163, 117);
             this.ModuleID.Name = "ModuleID";
-            this.ModuleID.Size = new System.Drawing.Size(100, 20);
+            this.ModuleID.Size = new System.Drawing.Size(163, 20);
             this.ModuleID.TabIndex = 1;
             // 
             // ProgrammeBox
@@ -64,14 +65,14 @@
             this.ProgrammeBox.FormattingEnabled = true;
             this.ProgrammeBox.Location = new System.Drawing.Point(163, 180);
             this.ProgrammeBox.Name = "ProgrammeBox";
-            this.ProgrammeBox.Size = new System.Drawing.Size(121, 21);
+            this.ProgrammeBox.Size = new System.Drawing.Size(163, 21);
             this.ProgrammeBox.TabIndex = 2;
             // 
             // Title
             // 
             this.Title.Location = new System.Drawing.Point(163, 243);
             this.Title.Name = "Title";
-            this.Title.Size = new System.Drawing.Size(100, 20);
+            this.Title.Size = new System.Drawing.Size(163, 20);
             this.Title.TabIndex = 3;
             // 
             // label2
@@ -104,16 +105,16 @@
             // TeamListBox
             // 
             this.TeamListBox.FormattingEnabled = true;
-            this.TeamListBox.Location = new System.Drawing.Point(512, 123);
+            this.TeamListBox.Location = new System.Drawing.Point(512, 108);
             this.TeamListBox.Name = "TeamListBox";
-            this.TeamListBox.Size = new System.Drawing.Size(120, 94);
+            this.TeamListBox.Size = new System.Drawing.Size(213, 154);
             this.TeamListBox.TabIndex = 7;
             this.TeamListBox.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.TeamListBox_ItemCheck);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(518, 97);
+            this.label5.Location = new System.Drawing.Point(509, 82);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(34, 13);
             this.label5.TabIndex = 8;
@@ -122,15 +123,15 @@
             // TeamLeader
             // 
             this.TeamLeader.FormattingEnabled = true;
-            this.TeamLeader.Location = new System.Drawing.Point(512, 265);
+            this.TeamLeader.Location = new System.Drawing.Point(512, 313);
             this.TeamLeader.Name = "TeamLeader";
-            this.TeamLeader.Size = new System.Drawing.Size(121, 21);
+            this.TeamLeader.Size = new System.Drawing.Size(213, 21);
             this.TeamLeader.TabIndex = 9;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(518, 233);
+            this.label6.Location = new System.Drawing.Point(509, 282);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(70, 13);
             this.label6.TabIndex = 10;
@@ -148,7 +149,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(34, 409);
+            this.button2.Location = new System.Drawing.Point(25, 405);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 12;
@@ -176,6 +177,7 @@
             this.Controls.Add(this.label1);
             this.Name = "NewModule";
             this.Text = "NewModule";
+            this.Load += new System.EventHandler(this.NewModule_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

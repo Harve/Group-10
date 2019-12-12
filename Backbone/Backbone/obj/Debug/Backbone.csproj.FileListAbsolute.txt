@@ -46,3 +46,15 @@ C:\Users\harve\Documents\GitHub\Group-10\Backbone\Backbone\obj\Debug\Backbone.cs
 C:\Users\harve\Documents\GitHub\Group-10\Backbone\Backbone\obj\Debug\Backbone.csproj.CopyComplete
 C:\Users\harve\Documents\GitHub\Group-10\Backbone\Backbone\obj\Debug\Backbone.exe
 C:\Users\harve\Documents\GitHub\Group-10\Backbone\Backbone\obj\Debug\Backbone.pdb
+\\adir.hull.ac.uk\home\578\578647\Systems Analysis Project\12-12-19\Group-10-Harvey\Backbone\Backbone\bin\Debug\Backbone.exe.config
+\\adir.hull.ac.uk\home\578\578647\Systems Analysis Project\12-12-19\Group-10-Harvey\Backbone\Backbone\bin\Debug\Backbone.exe
+\\adir.hull.ac.uk\home\578\578647\Systems Analysis Project\12-12-19\Group-10-Harvey\Backbone\Backbone\bin\Debug\Backbone.pdb
+\\adir.hull.ac.uk\home\578\578647\Systems Analysis Project\12-12-19\Group-10-Harvey\Backbone\Backbone\bin\Debug\EntityFramework.dll
+\\adir.hull.ac.uk\home\578\578647\Systems Analysis Project\12-12-19\Group-10-Harvey\Backbone\Backbone\bin\Debug\EntityFramework.SqlServer.dll
+\\adir.hull.ac.uk\home\578\578647\Systems Analysis Project\12-12-19\Group-10-Harvey\Backbone\Backbone\bin\Debug\EntityFramework.xml
+\\adir.hull.ac.uk\home\578\578647\Systems Analysis Project\12-12-19\Group-10-Harvey\Backbone\Backbone\bin\Debug\EntityFramework.SqlServer.xml
+\\adir.hull.ac.uk\home\578\578647\Systems Analysis Project\12-12-19\Group-10-Harvey\Backbone\Backbone\obj\Debug\Backbone.csprojAssemblyReference.cache
+\\adir.hull.ac.uk\home\578\578647\Systems Analysis Project\12-12-19\Group-10-Harvey\Backbone\Backbone\obj\Debug\Backbone.csproj.CoreCompileInputs.cache
+\\adir.hull.ac.uk\home\578\578647\Systems Analysis Project\12-12-19\Group-10-Harvey\Backbone\Backbone\obj\Debug\Backbone.csproj.CopyComplete
+\\adir.hull.ac.uk\home\578\578647\Systems Analysis Project\12-12-19\Group-10-Harvey\Backbone\Backbone\obj\Debug\Backbone.exe
+\\adir.hull.ac.uk\home\578\578647\Systems Analysis Project\12-12-19\Group-10-Harvey\Backbone\Backbone\obj\Debug\Backbone.pdb

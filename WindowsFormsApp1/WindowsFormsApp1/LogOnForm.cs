@@ -14,6 +14,7 @@ namespace UserInterface
     {
         public LogOnForm()
         {
+            SQLDatabase.SelectFromDatabase.LoadDatabase();
             this.BackColor = System.Drawing.Color.AliceBlue;
             InitializeComponent();
         }
