@@ -57,31 +57,31 @@
             // id
             // 
             this.id.Location = new System.Drawing.Point(256, 86);
-            this.id.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.id.Margin = new System.Windows.Forms.Padding(2);
             this.id.Name = "id";
-            this.id.Size = new System.Drawing.Size(76, 20);
+            this.id.Size = new System.Drawing.Size(92, 20);
             this.id.TabIndex = 1;
             // 
             // firstname
             // 
             this.firstname.Location = new System.Drawing.Point(256, 156);
-            this.firstname.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.firstname.Margin = new System.Windows.Forms.Padding(2);
             this.firstname.Name = "firstname";
-            this.firstname.Size = new System.Drawing.Size(76, 20);
+            this.firstname.Size = new System.Drawing.Size(92, 20);
             this.firstname.TabIndex = 2;
             // 
             // surname
             // 
             this.surname.Location = new System.Drawing.Point(256, 202);
-            this.surname.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.surname.Margin = new System.Windows.Forms.Padding(2);
             this.surname.Name = "surname";
-            this.surname.Size = new System.Drawing.Size(76, 20);
+            this.surname.Size = new System.Drawing.Size(92, 20);
             this.surname.TabIndex = 3;
             // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(256, 271);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(56, 19);
             this.button1.TabIndex = 4;
@@ -127,7 +127,7 @@
             "Moderator",
             "Director"});
             this.role.Location = new System.Drawing.Point(256, 233);
-            this.role.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.role.Margin = new System.Windows.Forms.Padding(2);
             this.role.Name = "role";
             this.role.Size = new System.Drawing.Size(92, 21);
             this.role.TabIndex = 8;
@@ -135,7 +135,7 @@
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(21, 328);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(56, 19);
             this.button2.TabIndex = 9;
@@ -156,9 +156,9 @@
             // password
             // 
             this.password.Location = new System.Drawing.Point(256, 119);
-            this.password.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.password.Margin = new System.Windows.Forms.Padding(2);
             this.password.Name = "password";
-            this.password.Size = new System.Drawing.Size(76, 20);
+            this.password.Size = new System.Drawing.Size(92, 20);
             this.password.TabIndex = 11;
             // 
             // label6
@@ -189,7 +189,7 @@
             this.Controls.Add(this.firstname);
             this.Controls.Add(this.id);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "AddUser";
             this.Text = "AddUser";
             this.ResumeLayout(false);

@@ -34,7 +34,7 @@ namespace UserInterface
 
         private void UsersButton_Click(object sender, EventArgs e)
         {
-            AddUser addUser = new AddUser(CurrentUser);
+            UserMenu addUser = new UserMenu(CurrentUser);
             this.Hide();
             addUser.Show();
         }

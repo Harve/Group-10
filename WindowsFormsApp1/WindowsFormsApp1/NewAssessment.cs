@@ -15,21 +15,18 @@ namespace UserInterface
     public partial class NewAssessment : Form
     {
         public User CurrentUser;
-        public List<string> ModuleNames = new List<string>();
         public string path;
         public string extension;
         public NewAssessment(User user)
         {
             CurrentUser = user;
-            foreach(Module module in SQLDatabase.SelectFromDatabase.allModules)
-            {
-                ModuleNames.Add(module.moduleID + " , " + module.title);
-            }
-            foreach( string module in ModuleNames)
-            {
-                ModuleDropDown.Items.Add(module);
-            }
+            
             InitializeComponent();
+            foreach (Module module in SQLDatabase.SelectFromDatabase.allModules)
+            {
+                ModuleDropDown.Items.Add(module.moduleID + " , " + module.title);
+            }
+
         }
 
         private void Home_Click(object sender, EventArgs e)

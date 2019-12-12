@@ -64,7 +64,7 @@
             // NameLabel
             // 
             this.NameLabel.AutoSize = true;
-            this.NameLabel.Location = new System.Drawing.Point(130, 133);
+            this.NameLabel.Location = new System.Drawing.Point(116, 130);
             this.NameLabel.Name = "NameLabel";
             this.NameLabel.Size = new System.Drawing.Size(77, 13);
             this.NameLabel.TabIndex = 2;
@@ -73,7 +73,7 @@
             // ModuleLabel
             // 
             this.ModuleLabel.AutoSize = true;
-            this.ModuleLabel.Location = new System.Drawing.Point(130, 178);
+            this.ModuleLabel.Location = new System.Drawing.Point(116, 178);
             this.ModuleLabel.Name = "ModuleLabel";
             this.ModuleLabel.Size = new System.Drawing.Size(42, 13);
             this.ModuleLabel.TabIndex = 3;
@@ -82,7 +82,7 @@
             // DescriptionLabel
             // 
             this.DescriptionLabel.AutoSize = true;
-            this.DescriptionLabel.Location = new System.Drawing.Point(130, 231);
+            this.DescriptionLabel.Location = new System.Drawing.Point(116, 231);
             this.DescriptionLabel.Name = "DescriptionLabel";
             this.DescriptionLabel.Size = new System.Drawing.Size(35, 13);
             this.DescriptionLabel.TabIndex = 4;
@@ -155,17 +155,17 @@
             // 
             // idTextBox
             // 
-            this.idTextBox.Location = new System.Drawing.Point(206, 130);
+            this.idTextBox.Location = new System.Drawing.Point(199, 130);
             this.idTextBox.Name = "idTextBox";
-            this.idTextBox.Size = new System.Drawing.Size(154, 20);
+            this.idTextBox.Size = new System.Drawing.Size(186, 20);
             this.idTextBox.TabIndex = 14;
             this.idTextBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
             // 
             // NameTextBox
             // 
-            this.NameTextBox.Location = new System.Drawing.Point(206, 228);
+            this.NameTextBox.Location = new System.Drawing.Point(199, 228);
             this.NameTextBox.Name = "NameTextBox";
-            this.NameTextBox.Size = new System.Drawing.Size(165, 20);
+            this.NameTextBox.Size = new System.Drawing.Size(186, 20);
             this.NameTextBox.TabIndex = 15;
             // 
             // ReleaseDateCalendar
@@ -214,9 +214,9 @@
             // ModuleDropDown
             // 
             this.ModuleDropDown.FormattingEnabled = true;
-            this.ModuleDropDown.Location = new System.Drawing.Point(206, 178);
+            this.ModuleDropDown.Location = new System.Drawing.Point(199, 178);
             this.ModuleDropDown.Name = "ModuleDropDown";
-            this.ModuleDropDown.Size = new System.Drawing.Size(121, 21);
+            this.ModuleDropDown.Size = new System.Drawing.Size(186, 21);
             this.ModuleDropDown.TabIndex = 22;
             // 
             // NewAssessment
