@@ -37,6 +37,10 @@ namespace UserInterface
             SQLDatabase.InsertIntoDatabase.InsertIntoProgramme(id.Text, title.Text, directorid[0]);
             Programme programme = new Programme(id.Text, directorid[0], title.Text);
             SQLDatabase.SelectFromDatabase.allProgrammes.Add(programme);
+
+            SQLDatabase.InsertIntoDatabase.InsertIntoNotification("NEW PROGRAMME: " + title.Text, CurrentUser.id, directorid[0]);
+            notification notification = new notification("", "NEW PROGRAMME: " + title.Text, CurrentUser.id, directorid[0], DateTime.Now);
+            SQLDatabase.SelectFromDatabase.allNotifications.Add(notification);
             MessageBox.Show("Programme Added");
 
         

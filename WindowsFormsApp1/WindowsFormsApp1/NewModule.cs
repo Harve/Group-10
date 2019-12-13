@@ -53,6 +53,9 @@ namespace UserInterface
                 }
                 TeamMembers.Add(member[0]);
                 SQLDatabase.InsertIntoDatabase.InsertIntoModuleTeam(member[0],ModuleID.Text,isLeader);
+                SQLDatabase.InsertIntoDatabase.InsertIntoNotification("NEW MODULE: " + Title.Text, CurrentUser.id, member[0]);
+                notification notification = new notification("", "NEW MODULE: " + Title.Text, CurrentUser.id, member[0], DateTime.Now);
+                SQLDatabase.SelectFromDatabase.allNotifications.Add(notification);
             }
             module.moduleTeamID = TeamMembers;
             module.moduleLeaderID = Leader;

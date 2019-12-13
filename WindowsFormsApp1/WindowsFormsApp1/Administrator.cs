@@ -38,5 +38,26 @@ namespace UserInterface
             this.Hide();
             addUser.Show();
         }
+
+        private void ReviewAssessmentsButton_Click(object sender, EventArgs e)
+        {
+            AssessmentMenu assessmentMenu = new AssessmentMenu(CurrentUser);
+            this.Hide();
+            assessmentMenu.Show();
+        }
+
+        private void ModulesButton_Click(object sender, EventArgs e)
+        {
+            ModuleMenu moduleMenu = new ModuleMenu(CurrentUser);
+            this.Hide();
+            moduleMenu.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ProgrammeMenu programmeMenu = new ProgrammeMenu(CurrentUser);
+            this.Hide();
+            programmeMenu.Show();
+        }
     }
 }

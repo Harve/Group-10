@@ -28,21 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.monthCalendar = new System.Windows.Forms.MonthCalendar();
+            this.CalendarView = new System.Windows.Forms.MonthCalendar();
             this.CalendarLabel = new System.Windows.Forms.Label();
-            this.AssignmentsDueLabel = new System.Windows.Forms.Label();
-            this.AssignmentsDueBox = new System.Windows.Forms.Label();
             this.BackButton = new System.Windows.Forms.Button();
             this.BackButtonPictureBox = new System.Windows.Forms.PictureBox();
+            this.AssessmentView = new System.Windows.Forms.DataGridView();
+            this.Assessment = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.BackButtonPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AssessmentView)).BeginInit();
             this.SuspendLayout();
             // 
-            // monthCalendar
+            // CalendarView
             // 
-            this.monthCalendar.CalendarDimensions = new System.Drawing.Size(2, 1);
-            this.monthCalendar.Location = new System.Drawing.Point(121, 75);
-            this.monthCalendar.Name = "monthCalendar";
-            this.monthCalendar.TabIndex = 0;
+            this.CalendarView.CalendarDimensions = new System.Drawing.Size(2, 1);
+            this.CalendarView.Location = new System.Drawing.Point(121, 75);
+            this.CalendarView.Name = "CalendarView";
+            this.CalendarView.TabIndex = 0;
+            this.CalendarView.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.CalendarView_DateSelected);
             // 
             // CalendarLabel
             // 
@@ -53,27 +56,6 @@
             this.CalendarLabel.Size = new System.Drawing.Size(124, 31);
             this.CalendarLabel.TabIndex = 2;
             this.CalendarLabel.Text = "Calendar";
-            // 
-            // AssignmentsDueLabel
-            // 
-            this.AssignmentsDueLabel.AutoSize = true;
-            this.AssignmentsDueLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.AssignmentsDueLabel.Location = new System.Drawing.Point(305, 267);
-            this.AssignmentsDueLabel.Name = "AssignmentsDueLabel";
-            this.AssignmentsDueLabel.Size = new System.Drawing.Size(135, 20);
-            this.AssignmentsDueLabel.TabIndex = 3;
-            this.AssignmentsDueLabel.Text = "Assignments Due";
-            this.AssignmentsDueLabel.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // AssignmentsDueBox
-            // 
-            this.AssignmentsDueBox.AutoSize = true;
-            this.AssignmentsDueBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.AssignmentsDueBox.Location = new System.Drawing.Point(266, 303);
-            this.AssignmentsDueBox.Name = "AssignmentsDueBox";
-            this.AssignmentsDueBox.Size = new System.Drawing.Size(212, 17);
-            this.AssignmentsDueBox.TabIndex = 4;
-            this.AssignmentsDueBox.Text = "PlaceHolderForAssignemntsDue";
             // 
             // BackButton
             // 
@@ -94,21 +76,42 @@
             this.BackButtonPictureBox.TabIndex = 22;
             this.BackButtonPictureBox.TabStop = false;
             // 
+            // AssessmentView
+            // 
+            this.AssessmentView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.AssessmentView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Assessment,
+            this.Date});
+            this.AssessmentView.Location = new System.Drawing.Point(121, 282);
+            this.AssessmentView.Name = "AssessmentView";
+            this.AssessmentView.Size = new System.Drawing.Size(458, 150);
+            this.AssessmentView.TabIndex = 23;
+            // 
+            // Assessment
+            // 
+            this.Assessment.HeaderText = "Assessment";
+            this.Assessment.Name = "Assessment";
+            // 
+            // Date
+            // 
+            this.Date.HeaderText = "Date";
+            this.Date.Name = "Date";
+            // 
             // Calendar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(719, 491);
+            this.Controls.Add(this.AssessmentView);
             this.Controls.Add(this.BackButtonPictureBox);
             this.Controls.Add(this.BackButton);
-            this.Controls.Add(this.AssignmentsDueBox);
-            this.Controls.Add(this.AssignmentsDueLabel);
             this.Controls.Add(this.CalendarLabel);
-            this.Controls.Add(this.monthCalendar);
+            this.Controls.Add(this.CalendarView);
             this.Name = "Calendar";
             this.Text = "Calendar";
             ((System.ComponentModel.ISupportInitialize)(this.BackButtonPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AssessmentView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -116,11 +119,12 @@
 
         #endregion
 
-        private System.Windows.Forms.MonthCalendar monthCalendar;
+        private System.Windows.Forms.MonthCalendar CalendarView;
         private System.Windows.Forms.Label CalendarLabel;
-        private System.Windows.Forms.Label AssignmentsDueLabel;
-        private System.Windows.Forms.Label AssignmentsDueBox;
         private System.Windows.Forms.Button BackButton;
         private System.Windows.Forms.PictureBox BackButtonPictureBox;
+        private System.Windows.Forms.DataGridView AssessmentView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Assessment;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Date;
     }
 }

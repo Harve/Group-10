@@ -11,7 +11,7 @@ public class Assessment
 	public Assessment(string assessmentid, string title, string ModID)
 	{
         assessmentID = assessmentid;
-        
+        this.title = title;
         moduleID = ModID;
         
 	}
