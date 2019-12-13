@@ -114,3 +114,9 @@ C:\Users\harve\Documents\GitHub\Group-10\WindowsFormsApp1\WindowsFormsApp1\obj\D
 \\adir.hull.ac.uk\home\578\578647\Systems Analysis Project\12-12-19\Group-10-Harvey\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\UserInterface.UserMenu.resources
 \\adir.hull.ac.uk\home\578\578647\Systems Analysis Project\12-12-19\Group-10-Harvey\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\UserInterface.EditUser.resources
 \\adir.hull.ac.uk\home\578\578647\Systems Analysis Project\12-12-19\Group-10-Harvey\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\UserInterface.NewProgramme.resources
+C:\Users\harve\Documents\GitHub\Group-10\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\UserInterface.ProgrammeMenu.resources
+C:\Users\harve\Documents\GitHub\Group-10\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\UserInterface.ModuleMenu.resources
+C:\Users\harve\Documents\GitHub\Group-10\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\UserInterface.AssessmentMenu.resources
+C:\Users\harve\Documents\GitHub\Group-10\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\UserInterface.EditUser.resources
+C:\Users\harve\Documents\GitHub\Group-10\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\UserInterface.NewProgramme.resources
+C:\Users\harve\Documents\GitHub\Group-10\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\UserInterface.UserMenu.resources

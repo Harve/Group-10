@@ -88,14 +88,35 @@ namespace UserInterface
 
             string[] combinedmoduleid = (ModuleDropDown.Text).Split(',');
             string moduleid = combinedmoduleid[0];
+            moduleid = moduleid.Trim();
 
-            DateTime date = Convert.ToDateTime((DueDateCalendar.SelectionRange.Start.ToLongTimeString()));
+            DateTime date = Convert.ToDateTime((DueDateCalendar.SelectionStart));
+
             SQLDatabase.InsertIntoDatabase.InsertIntoAssessment(id, name, moduleid);
-
             Assessment assessment = new Assessment(id, name, moduleid);
             SQLDatabase.SelectFromDatabase.allAssessments.Add(assessment);
+
+            SQLDatabase.InsertIntoDatabase.InsertIntoDeadline(name, id, date);
+            Deadline deadline = new Deadline(id, name, date);
+            SQLDatabase.SelectFromDatabase.allDeadlines.Add(deadline);
+
+            Module module = SQLDatabase.SelectFromDatabase.allModules.Find(x => x.moduleID == moduleid);
+            foreach(string user in module.moduleTeamID)
+            {
+                SQLDatabase.InsertIntoDatabase.InsertIntoNotification("NEW ASSESSMENT: " + name, CurrentUser.id, user);
+                notification notification = new notification("", "NEW ASSESSMENT: " + name, CurrentUser.id, user, DateTime.Now);
+                SQLDatabase.SelectFromDatabase.allNotifications.Add(notification);
+            }
+
             string newPath = "Files/"+id+extension;
-            File.Copy(path, newPath);
+            try
+            {
+                File.Copy(path, newPath);
+            }
+            catch
+            {
+                MessageBox.Show("No File selected");
+            }
             MessageBox.Show("Successfully added Assessment");
 
         }

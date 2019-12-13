@@ -58,6 +58,24 @@
     <Compile Include="Administrator.Designer.cs">
       <DependentUpon>Administrator.cs</DependentUpon>
     </Compile>
+    <Compile Include="ProgrammeMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProgrammeMenu.Designer.cs">
+      <DependentUpon>ProgrammeMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleMenu.Designer.cs">
+      <DependentUpon>ModuleMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AssessmentMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssessmentMenu.Designer.cs">
+      <DependentUpon>AssessmentMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Calendar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,6 +149,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Administrator.resx">
       <DependentUpon>Administrator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgrammeMenu.resx">
+      <DependentUpon>ProgrammeMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleMenu.resx">
+      <DependentUpon>ModuleMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AssessmentMenu.resx">
+      <DependentUpon>AssessmentMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Calendar.resx">
       <DependentUpon>Calendar.cs</DependentUpon>

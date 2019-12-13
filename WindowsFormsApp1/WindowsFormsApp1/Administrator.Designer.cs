@@ -82,6 +82,7 @@
             this.ModulesButton.TabIndex = 9;
             this.ModulesButton.Text = "Modules";
             this.ModulesButton.UseVisualStyleBackColor = true;
+            this.ModulesButton.Click += new System.EventHandler(this.ModulesButton_Click);
             // 
             // ModulesPictureBox
             // 
@@ -109,6 +110,7 @@
             this.ReviewAssessmentsButton.TabIndex = 12;
             this.ReviewAssessmentsButton.Text = "Assessments";
             this.ReviewAssessmentsButton.UseVisualStyleBackColor = true;
+            this.ReviewAssessmentsButton.Click += new System.EventHandler(this.ReviewAssessmentsButton_Click);
             // 
             // BackButton
             // 
@@ -137,6 +139,7 @@
             this.button1.TabIndex = 24;
             this.button1.Text = "Programmes";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Administrator
             // 

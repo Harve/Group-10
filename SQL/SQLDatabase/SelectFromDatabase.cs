@@ -190,11 +190,11 @@ namespace SQLDatabase
 
             while (rdr.Read())
             {
-                string moduleid = rdr.GetString(0);
+                string assessmentid = rdr.GetString(0);
                 string info = rdr.GetString(1);
                 DateTime deadlinedate = rdr.GetDateTime(2);
 
-                Deadline deadline = new Deadline(moduleid, info, deadlinedate);
+                Deadline deadline = new Deadline(assessmentid, info, deadlinedate);
 
                 deadlines.Add(deadline);
 

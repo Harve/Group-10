@@ -8,12 +8,12 @@ namespace Backbone
 {
     public class Deadline
     {
-        public string moduleid;
+        public string assessmentid;
         public string title;
         public DateTime deadlineDate;
         public Deadline(string moduleID, string Title, DateTime date)
         {
-            moduleid = moduleID;
+            assessmentid = moduleID;
             title = Title;
             deadlineDate = date;
         }
