@@ -26,9 +26,7 @@ namespace UserInterface
 
         private void button1_Click(object sender, EventArgs e)
         {
-            CreateMenu createMenu = new CreateMenu(CurrentUser);
-            this.Hide();
-            createMenu.Show();
+
         }
 
         private void Submit_Click(object sender, EventArgs e)

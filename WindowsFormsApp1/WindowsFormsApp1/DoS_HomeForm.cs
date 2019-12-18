@@ -32,8 +32,8 @@ namespace UserInterface
 
         private void backButton_Click(object sender, EventArgs e)
         {
-            this.Hide();
             previousForm.Show();
+            this.Close();
         }
 
         private void setDeadlinesButton_Click(object sender, EventArgs e)
@@ -53,7 +53,9 @@ namespace UserInterface
 
         private void assesmentOverviewButton_Click(object sender, EventArgs e)
         {
-
+            MyAssessments myAssessments = new MyAssessments(currentUser, this);
+            this.Hide();
+            myAssessments.Show();
         }
     }
 }

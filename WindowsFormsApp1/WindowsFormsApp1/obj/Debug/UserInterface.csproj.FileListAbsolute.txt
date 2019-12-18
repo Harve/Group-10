@@ -135,13 +135,8 @@ D:\Jacek\Uni\Semseter 3\System Analysis, Design and Process\ACW\Group-10\Windows
 D:\Jacek\Uni\Semseter 3\System Analysis, Design and Process\ACW\Group-10\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\UserInterface.csprojAssemblyReference.cache
 D:\Jacek\Uni\Semseter 3\System Analysis, Design and Process\ACW\Group-10\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\UserInterface.AddUser.resources
 D:\Jacek\Uni\Semseter 3\System Analysis, Design and Process\ACW\Group-10\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\UserInterface.Administrator.resources
-D:\Jacek\Uni\Semseter 3\System Analysis, Design and Process\ACW\Group-10\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\UserInterface.ProgrammeMenu.resources
-D:\Jacek\Uni\Semseter 3\System Analysis, Design and Process\ACW\Group-10\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\UserInterface.ModuleMenu.resources
-D:\Jacek\Uni\Semseter 3\System Analysis, Design and Process\ACW\Group-10\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\UserInterface.AssessmentMenu.resources
 D:\Jacek\Uni\Semseter 3\System Analysis, Design and Process\ACW\Group-10\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\UserInterface.Calendar.resources
-D:\Jacek\Uni\Semseter 3\System Analysis, Design and Process\ACW\Group-10\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\UserInterface.CreateMenu.resources
 D:\Jacek\Uni\Semseter 3\System Analysis, Design and Process\ACW\Group-10\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\UserInterface.EditUser.resources
-D:\Jacek\Uni\Semseter 3\System Analysis, Design and Process\ACW\Group-10\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\UserInterface.HomeForm.resources
 D:\Jacek\Uni\Semseter 3\System Analysis, Design and Process\ACW\Group-10\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\UserInterface.LogOnForm.resources
 D:\Jacek\Uni\Semseter 3\System Analysis, Design and Process\ACW\Group-10\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\UserInterface.MyAssessments.resources
 D:\Jacek\Uni\Semseter 3\System Analysis, Design and Process\ACW\Group-10\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\UserInterface.NewAssessment.resources

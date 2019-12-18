@@ -42,9 +42,7 @@ namespace UserInterface
         
         private void ReviewAssessmentsButton_Click(object sender, EventArgs e)
         {
-            AssessmentMenu assessmentMenu = new AssessmentMenu(CurrentUser);
-            this.Hide();
-            assessmentMenu.Show();
+
         }
         
         private void ModulesButton_Click(object sender, EventArgs e)

@@ -76,9 +76,7 @@ namespace UserInterface
 
         private void BackButton_Click(object sender, EventArgs e)
         {
-            CreateMenu createForm = new CreateMenu(CurrentUser);
-            this.Hide();
-            createForm.Show();
+
         }
 
         private void SubmitButton_Click(object sender, EventArgs e)

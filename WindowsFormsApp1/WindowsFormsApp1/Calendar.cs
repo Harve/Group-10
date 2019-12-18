@@ -58,9 +58,7 @@ namespace UserInterface
 
         private void BackButton_Click(object sender, EventArgs e)
         {
-            HomeForm homeForm = new HomeForm(CurrentUser);
-            this.Hide();
-            homeForm.Show();
+
 
         }
 

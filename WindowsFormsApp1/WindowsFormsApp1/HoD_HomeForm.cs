@@ -24,13 +24,15 @@ namespace UserInterface
 
         private void assesmentOverviewButton_Click(object sender, EventArgs e)
         {
-
+            MyAssessments myAssessments = new MyAssessments(currentUser, this);
+            this.Hide();
+            myAssessments.Show();
         }
 
         private void backButton_Click(object sender, EventArgs e)
         {
-            this.Hide();
             previousForm.Show();
+            this.Close();
         }
 
         private void notificationButton_Click(object sender, EventArgs e)

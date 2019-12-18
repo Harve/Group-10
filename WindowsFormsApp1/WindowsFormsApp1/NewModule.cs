@@ -100,9 +100,7 @@ namespace UserInterface
 
         private void button2_Click(object sender, EventArgs e)
         {
-            CreateMenu createMenu = new CreateMenu(CurrentUser);
-            this.Hide();
-            createMenu.Show();
+
         }
 
         private void NewModule_Load(object sender, EventArgs e)

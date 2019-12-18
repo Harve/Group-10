@@ -178,35 +178,11 @@
     <Compile Include="ProgrammeEdit.Designer.cs">
       <DependentUpon>ProgrammeEdit.cs</DependentUpon>
     </Compile>
-    <Compile Include="ProgrammeMenu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ProgrammeMenu.Designer.cs">
-      <DependentUpon>ProgrammeMenu.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ModuleMenu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ModuleMenu.Designer.cs">
-      <DependentUpon>ModuleMenu.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AssessmentMenu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AssessmentMenu.Designer.cs">
-      <DependentUpon>AssessmentMenu.cs</DependentUpon>
-    </Compile>
     <Compile Include="Calendar.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Calendar.Designer.cs">
       <DependentUpon>Calendar.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CreateMenu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CreateMenu.Designer.cs">
-      <DependentUpon>CreateMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="EditUser.cs">
       <SubType>Form</SubType>
@@ -219,12 +195,6 @@
     </Compile>
     <Compile Include="New Assessment.Designer.cs">
       <DependentUpon>NewAssessment.cs</DependentUpon>
-    </Compile>
-    <Compile Include="HomeForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="HomeForm.Designer.cs">
-      <DependentUpon>HomeForm.cs</DependentUpon>
     </Compile>
     <Compile Include="LogOnForm.cs">
       <SubType>Form</SubType>
@@ -336,26 +306,11 @@
     <EmbeddedResource Include="ProgrammeEdit.resx">
       <DependentUpon>ProgrammeEdit.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ProgrammeMenu.resx">
-      <DependentUpon>ProgrammeMenu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ModuleMenu.resx">
-      <DependentUpon>ModuleMenu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AssessmentMenu.resx">
-      <DependentUpon>AssessmentMenu.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Calendar.resx">
       <DependentUpon>Calendar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CreateMenu.resx">
-      <DependentUpon>CreateMenu.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="EditUser.resx">
       <DependentUpon>EditUser.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="HomeForm.resx">
-      <DependentUpon>HomeForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LogOnForm.resx">
       <DependentUpon>LogOnForm.cs</DependentUpon>
