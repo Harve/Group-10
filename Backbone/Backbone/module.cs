@@ -8,16 +8,15 @@ public class Module
 {
     public string moduleID;
     public string moduleLeaderID;
-    public List<string> moduleTeamID;
     public string programmeID;
     public string title;
 
-	public Module(string moduleid,string Title, string programme)
+	public Module(string moduleid,string Title, string programme, string moduleLeader)
 	{
         moduleID = moduleid;
         title = Title;
         programmeID = programme;
-        moduleTeamID = new List<string>();
+        moduleLeaderID = moduleLeader;
 	}
 
     

@@ -10,7 +10,7 @@ namespace SQLDatabase
 {
     public static class UpdateDatabase
     {
-        public static void UpdateUser(string id, string firstname, string surname, string role)
+        public static void UpdateUser(string id, string firstname, string surname)
         {
             SQLiteConnection m_dbConnection = new SQLiteConnection("Data Source=Database.sqlite;Version=3;");
             m_dbConnection.Open();
@@ -18,10 +18,9 @@ namespace SQLDatabase
             using (SQLiteCommand command = new SQLiteCommand(m_dbConnection))
             {
                 command.CommandText =
-                    "update user set firstname = :firstname, surname = :surname, role = :role where userid=:id";
+                    "update user set firstname = :firstname, surname = :surname where userid=:id";
                 command.Parameters.Add("firstname", DbType.String).Value = firstname;
                 command.Parameters.Add("surname", DbType.String).Value = surname;
-                command.Parameters.Add("role", DbType.String).Value = role;
                 command.Parameters.Add("id", DbType.String).Value = id;
                 command.ExecuteNonQuery();
             }
@@ -60,7 +59,7 @@ namespace SQLDatabase
             m_dbConnection.Close();
         }
 
-        public static void UpdateModule(string moduleid, string title, string programmeid)
+        public static void UpdateModule(string moduleid, string title, string programmeid, string moduleleader)
         {
             SQLiteConnection m_dbConnection = new SQLiteConnection("Data Source=Database.sqlite;Version=3;");
             m_dbConnection.Open();
@@ -68,32 +67,36 @@ namespace SQLDatabase
             using (SQLiteCommand command = new SQLiteCommand(m_dbConnection))
             {
                 command.CommandText =
-                    "update module set title = :title, programmeid = :programmeid where moduleid=:moduleid";
+                    "update module set title = :title, programmeid = :programmeid, moduleleader =:moduleleader where moduleid=:moduleid";
                 command.Parameters.Add("title", DbType.String).Value = title;
                 command.Parameters.Add("moduleid", DbType.String).Value = moduleid;
                 command.Parameters.Add("programmeid", DbType.String).Value = programmeid;
+                command.Parameters.Add("moduleleader", DbType.String).Value = moduleleader;
                 command.ExecuteNonQuery();
             }
             m_dbConnection.Close();
         }
 
-        public static void UpdateAssessment(string assessmentid, string title, string moduleid)
+        public static void UpdateAssessment(string assessmentid, string moduleid, string userid, string laststep, string nextstep)
         {
             SQLiteConnection m_dbConnection = new SQLiteConnection("Data Source=Database.sqlite;Version=3;");
             m_dbConnection.Open();
             using (SQLiteCommand command = new SQLiteCommand(m_dbConnection))
             {
                 command.CommandText =
-                    "update assessment set title = :title, moduleid = :moduleid where assessmentid=:assessmentid";
-                command.Parameters.Add("title", DbType.String).Value = title;
+                    "update assessment set userid = :userid, laststep = :laststep, nextstep = :nextstep, moduleid = :moduleid where assessmentid=:assessmentid";
                 command.Parameters.Add("assessmentid", DbType.String).Value = assessmentid;
                 command.Parameters.Add("moduleid", DbType.String).Value = moduleid;
+                command.Parameters.Add("userid", DbType.String).Value = userid;
+                command.Parameters.Add("laststep", DbType.String).Value = laststep;
+                command.Parameters.Add("nextstep", DbType.String).Value = laststep;
                 command.ExecuteNonQuery();
             }
             m_dbConnection.Close();
         }
-
-        public static void UpdateModuleTeam(string userid, string moduleid, int leader)
+ 
+        /*
+        public static void UpdateModuleTeam(string userid, string moduleid)
         {
             SQLiteConnection m_dbConnection = new SQLiteConnection("Data Source=Database.sqlite;Version=3;");
             m_dbConnection.Open();
@@ -108,7 +111,7 @@ namespace SQLDatabase
             }
             m_dbConnection.Close();
         }
-
+        */
         public static void UpdateDeadline( string information, string moduleid, DateTime date)
         {
             SQLiteConnection m_dbConnection = new SQLiteConnection("Data Source=Database.sqlite;Version=3;");

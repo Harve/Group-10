@@ -31,16 +31,7 @@ namespace UserInterface
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if(SQLDatabase.ManageDatabase.Logon(userIdTextBox.Text, passwordTextBox.Text) == true)
-            {
-                HomeForm homeForm = new HomeForm(userIdTextBox.Text);
-                this.Hide();
-                homeForm.Show();
-            }
-            else
-            {
-                MessageBox.Show("User ID or Password incorrect.");
-            }
+            LoginCheck();
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
@@ -64,6 +55,25 @@ namespace UserInterface
         }
 
         private void userIdTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LoginCheck()
+        {
+            if (SQLDatabase.ManageDatabase.Logon(userIdTextBox.Text, passwordTextBox.Text) == true)
+            {
+                RoleSelector roleSelector = new RoleSelector(userIdTextBox.Text);
+                this.Hide();
+                roleSelector.Show();
+            }
+            else
+            {
+                MessageBox.Show("User ID or Password incorrect.");
+            }
+        }
+
+        private void label3_Click(object sender, EventArgs e)
         {
 
         }

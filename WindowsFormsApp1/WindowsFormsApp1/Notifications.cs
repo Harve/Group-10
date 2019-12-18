@@ -15,8 +15,10 @@ namespace UserInterface
     public partial class Notifications : Form
     {
         User CurrentUser;
-        public Notifications(User user)
+        private Form previousForm;
+        public Notifications(User user,Form previousForm)
         {
+            this.previousForm = previousForm;
             CurrentUser = user;
             InitializeComponent();
             List<notification> CurentNotification = new List<notification>();
@@ -54,9 +56,9 @@ namespace UserInterface
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            HomeForm homeForm = new HomeForm(CurrentUser);
             this.Hide();
-            homeForm.Show();
+            previousForm.Show();
+
         }
     }
 }

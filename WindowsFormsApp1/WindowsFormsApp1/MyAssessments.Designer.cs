@@ -31,25 +31,25 @@
             this.MyAssessmentsLabel = new System.Windows.Forms.Label();
             this.BackButton = new System.Windows.Forms.Button();
             this.BackButtonPictureBox = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.AssessmentViewer = new System.Windows.Forms.DataGridView();
-            this.Assessment = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.AssessmentName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Programme = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Module = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DueDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.EditStatus = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Assesment = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ModuleTeamID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lastStep = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nextStep = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.BackButtonPictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AssessmentViewer)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // MyAssessmentsLabel
             // 
             this.MyAssessmentsLabel.AutoSize = true;
             this.MyAssessmentsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.MyAssessmentsLabel.Location = new System.Drawing.Point(243, 9);
+            this.MyAssessmentsLabel.Location = new System.Drawing.Point(324, 11);
+            this.MyAssessmentsLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.MyAssessmentsLabel.Name = "MyAssessmentsLabel";
-            this.MyAssessmentsLabel.Size = new System.Drawing.Size(220, 31);
+            this.MyAssessmentsLabel.Size = new System.Drawing.Size(273, 39);
             this.MyAssessmentsLabel.TabIndex = 2;
             this.MyAssessmentsLabel.Text = "My Assessments";
             this.MyAssessmentsLabel.Click += new System.EventHandler(this.CreateNewLable_Click);
@@ -57,9 +57,10 @@
             // BackButton
             // 
             this.BackButton.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.BackButton.Location = new System.Drawing.Point(12, 459);
+            this.BackButton.Location = new System.Drawing.Point(16, 565);
+            this.BackButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BackButton.Name = "BackButton";
-            this.BackButton.Size = new System.Drawing.Size(101, 24);
+            this.BackButton.Size = new System.Drawing.Size(135, 30);
             this.BackButton.TabIndex = 21;
             this.BackButton.Text = "Back";
             this.BackButton.UseVisualStyleBackColor = true;
@@ -67,83 +68,76 @@
             // 
             // BackButtonPictureBox
             // 
-            this.BackButtonPictureBox.Location = new System.Drawing.Point(119, 459);
+            this.BackButtonPictureBox.Location = new System.Drawing.Point(159, 565);
+            this.BackButtonPictureBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BackButtonPictureBox.Name = "BackButtonPictureBox";
-            this.BackButtonPictureBox.Size = new System.Drawing.Size(29, 25);
+            this.BackButtonPictureBox.Size = new System.Drawing.Size(39, 31);
             this.BackButtonPictureBox.TabIndex = 22;
             this.BackButtonPictureBox.TabStop = false;
             // 
-            // label1
+            // dataGridView1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 23;
-            this.label1.Text = "label1";
-            // 
-            // AssessmentViewer
-            // 
-            this.AssessmentViewer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.AssessmentViewer.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Assessment,
-            this.AssessmentName,
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Programme,
             this.Module,
-            this.DueDate,
-            this.Status,
-            this.EditStatus});
-            this.AssessmentViewer.Location = new System.Drawing.Point(37, 103);
-            this.AssessmentViewer.Name = "AssessmentViewer";
-            this.AssessmentViewer.Size = new System.Drawing.Size(676, 298);
-            this.AssessmentViewer.TabIndex = 27;
+            this.Assesment,
+            this.ModuleTeamID,
+            this.lastStep,
+            this.nextStep});
+            this.dataGridView1.Location = new System.Drawing.Point(28, 111);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(934, 286);
+            this.dataGridView1.TabIndex = 23;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // Assessment
+            // Programme
             // 
-            this.Assessment.HeaderText = "Assessment";
-            this.Assessment.Name = "Assessment";
-            // 
-            // AssessmentName
-            // 
-            this.AssessmentName.HeaderText = "AssessmentName";
-            this.AssessmentName.Name = "AssessmentName";
+            this.Programme.HeaderText = "Programme";
+            this.Programme.Name = "Programme";
             // 
             // Module
             // 
             this.Module.HeaderText = "Module";
             this.Module.Name = "Module";
             // 
-            // DueDate
+            // Assesment
             // 
-            this.DueDate.HeaderText = "Due Date";
-            this.DueDate.Name = "DueDate";
+            this.Assesment.HeaderText = "Assesment";
+            this.Assesment.Name = "Assesment";
             // 
-            // Status
+            // ModuleTeamID
             // 
-            this.Status.HeaderText = "Status";
-            this.Status.Name = "Status";
+            this.ModuleTeamID.HeaderText = "Module Team Member";
+            this.ModuleTeamID.Name = "ModuleTeamID";
             // 
-            // EditStatus
+            // lastStep
             // 
-            this.EditStatus.HeaderText = "EditStatus";
-            this.EditStatus.Name = "EditStatus";
-            this.EditStatus.Text = "Edit Status";
+            this.lastStep.HeaderText = "Last Completed Step";
+            this.lastStep.Name = "lastStep";
+            // 
+            // nextStep
+            // 
+            this.nextStep.HeaderText = "Next Step to Complete";
+            this.nextStep.Name = "nextStep";
             // 
             // MyAssessments
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(741, 495);
-            this.Controls.Add(this.AssessmentViewer);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(988, 609);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.BackButtonPictureBox);
             this.Controls.Add(this.BackButton);
             this.Controls.Add(this.MyAssessmentsLabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "MyAssessments";
             this.Text = "My Assessments";
             this.Load += new System.EventHandler(this.MyAssessments_Load);
             ((System.ComponentModel.ISupportInitialize)(this.BackButtonPictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AssessmentViewer)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -154,13 +148,12 @@
         private System.Windows.Forms.Label MyAssessmentsLabel;
         private System.Windows.Forms.Button BackButton;
         private System.Windows.Forms.PictureBox BackButtonPictureBox;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView AssessmentViewer;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Assessment;
-        private System.Windows.Forms.DataGridViewTextBoxColumn AssessmentName;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Programme;
         private System.Windows.Forms.DataGridViewTextBoxColumn Module;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DueDate;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Status;
-        private System.Windows.Forms.DataGridViewButtonColumn EditStatus;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Assesment;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ModuleTeamID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn lastStep;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nextStep;
     }
 }

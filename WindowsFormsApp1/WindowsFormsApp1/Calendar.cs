@@ -18,7 +18,7 @@ namespace UserInterface
         public List<Assessment> assessments = new List<Assessment>();
         public List<Deadline> deadlines = new List<Deadline>();
         public Calendar(User user)
-        {
+        {/*
             CurrentUser = user;
             InitializeComponent();
             foreach(Module mod in SQLDatabase.SelectFromDatabase.allModules)
@@ -48,6 +48,7 @@ namespace UserInterface
                 }
                 CalendarView.AddBoldedDate(deadline.deadlineDate);
             }
+            */
         }
 
         private void label1_Click(object sender, EventArgs e)

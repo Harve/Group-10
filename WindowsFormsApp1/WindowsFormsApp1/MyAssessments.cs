@@ -13,46 +13,34 @@ namespace UserInterface
 {
     public partial class MyAssessments : Form
     {
-        public User CurrentUser;
-        public List<Module> UsersModule;
-        public List<Assessment> UsersAssessment = new List<Assessment>();
-        public MyAssessments(User user)
+        public User currentUser;
+        Form previousForm;
+        List<Assessment> allAssesments;
+        public MyAssessments(User currentUser,Form previousForm)
         {
-            CurrentUser = user;
+            this.currentUser = currentUser;
+            this.previousForm = previousForm;
             InitializeComponent();
-            UsersModule = SQLDatabase.SelectFromDatabase.allModules.FindAll(x => x.moduleTeamID.Contains(CurrentUser.id));
-            foreach (Module module in UsersModule)
+            allAssesments = SQLDatabase.SelectFromDatabase.ImportAssessments();
+            try
             {
-
-                foreach (Assessment AssessToAdd in SQLDatabase.SelectFromDatabase.allAssessments)
-                {
-                    if (AssessToAdd.moduleID == module.moduleID)
-                    {
-                        UsersAssessment.Add(AssessToAdd);
-                    }
-                }
-
-            }    
-
-            if (UsersAssessment.Count == 0)
+                dataGridView1.Rows.Add(allAssesments.Count - 1);
+            }
+            catch
             {
-              
 
             }
             
-            foreach(Assessment assmentrow in UsersAssessment)
+            for (int i = 0; i < allAssesments.Count; i++)
             {
-                Deadline dead = SQLDatabase.SelectFromDatabase.allDeadlines.Find(x => x.assessmentid == assmentrow.assessmentID);
-                if(dead == null)
-                {
-                    AssessmentViewer.Rows.Add(assmentrow.assessmentID, assmentrow.title, assmentrow.moduleID);
-                }
-                else
-                {
-                    AssessmentViewer.Rows.Add(assmentrow.assessmentID, assmentrow.title, assmentrow.moduleID, dead.deadlineDate, dead.title);
-                }
-               
+                
+                dataGridView1[1, i].Value = allAssesments[i].moduleID;
+                dataGridView1[2, i].Value = allAssesments[i].assessmentID;
+                dataGridView1[3, i].Value = allAssesments[i].moduleTeamMemberID;
+                dataGridView1[4, i].Value = allAssesments[i].getLastStep();
+                dataGridView1[5, i].Value = allAssesments[i].getNextStep();
             }
+            
         }
 
         private void CreateNewLable_Click(object sender, EventArgs e)
@@ -77,12 +65,16 @@ namespace UserInterface
 
         private void BackButton_Click(object sender, EventArgs e)
         {
-            HomeForm homeForm = new HomeForm(CurrentUser);
-            this.Hide();
-            homeForm.Show();
+            previousForm.Show();
+            this.Close();
         }
 
         private void MyAssessments_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

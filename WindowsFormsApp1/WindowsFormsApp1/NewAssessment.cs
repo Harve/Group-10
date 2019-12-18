@@ -92,22 +92,23 @@ namespace UserInterface
 
             DateTime date = Convert.ToDateTime((DueDateCalendar.SelectionStart));
 
-            SQLDatabase.InsertIntoDatabase.InsertIntoAssessment(id, name, moduleid);
-            Assessment assessment = new Assessment(id, name, moduleid);
-            SQLDatabase.SelectFromDatabase.allAssessments.Add(assessment);
+           // SQLDatabase.InsertIntoDatabase.InsertIntoAssessment(id, name, moduleid,"0");
+            // assessment = new Assessment(id, name, moduleid);
+           // SQLDatabase.SelectFromDatabase.allAssessments.Add(assessment);
 
             SQLDatabase.InsertIntoDatabase.InsertIntoDeadline(name, id, date);
             Deadline deadline = new Deadline(id, name, date);
             SQLDatabase.SelectFromDatabase.allDeadlines.Add(deadline);
 
             Module module = SQLDatabase.SelectFromDatabase.allModules.Find(x => x.moduleID == moduleid);
-            foreach(string user in module.moduleTeamID)
+            /*
+            foreach (string user in module.moduleTeamID)
             {
                 SQLDatabase.InsertIntoDatabase.InsertIntoNotification("NEW ASSESSMENT: " + name, CurrentUser.id, user);
                 notification notification = new notification("", "NEW ASSESSMENT: " + name, CurrentUser.id, user, DateTime.Now);
                 SQLDatabase.SelectFromDatabase.allNotifications.Add(notification);
             }
-
+            */
             string newPath = "Files/"+id+extension;
             try
             {

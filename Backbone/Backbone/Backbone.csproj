@@ -55,7 +55,9 @@
   <ItemGroup>
     <Compile Include="assessment.cs" />
     <Compile Include="deadline.cs" />
+    <Compile Include="ModuleTeam.cs" />
     <Compile Include="notification.cs" />
+    <Compile Include="Role.cs" />
     <Compile Include="user.cs" />
     <Compile Include="module.cs" />
     <Compile Include="Program.cs" />

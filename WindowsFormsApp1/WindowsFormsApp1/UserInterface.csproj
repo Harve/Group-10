@@ -58,6 +58,126 @@
     <Compile Include="Administrator.Designer.cs">
       <DependentUpon>Administrator.cs</DependentUpon>
     </Compile>
+    <Compile Include="AdminModuleMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminModuleMenu.Designer.cs">
+      <DependentUpon>AdminModuleMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminProgrammeMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminProgrammeMenu.Designer.cs">
+      <DependentUpon>AdminProgrammeMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateAssesment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateAssesment.Designer.cs">
+      <DependentUpon>CreateAssesment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteProgramme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteProgramme.Designer.cs">
+      <DependentUpon>DeleteProgramme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteUser.Designer.cs">
+      <DependentUpon>DeleteUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoS_HomeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoS_HomeForm.Designer.cs">
+      <DependentUpon>DoS_HomeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FacHub_HomeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FacHub_HomeForm.Designer.cs">
+      <DependentUpon>FacHub_HomeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HoD_HomeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HoD_HomeForm.Designer.cs">
+      <DependentUpon>HoD_HomeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Moderator_HomeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Moderator_HomeForm.Designer.cs">
+      <DependentUpon>Moderator_HomeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleAdd.Designer.cs">
+      <DependentUpon>ModuleAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleDelete.Designer.cs">
+      <DependentUpon>ModuleDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleEdit.Designer.cs">
+      <DependentUpon>ModuleEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleLeader_HomeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleLeader_HomeForm.Designer.cs">
+      <DependentUpon>ModuleLeader_HomeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleTeamManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleTeamManager.Designer.cs">
+      <DependentUpon>ModuleTeamManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleTeam_HomeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleTeam_HomeForm.Designer.cs">
+      <DependentUpon>ModuleTeam_HomeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PanelAdmin_HomeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PanelAdmin_HomeForm.Designer.cs">
+      <DependentUpon>PanelAdmin_HomeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PanelMemberOther_HomeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PanelMemberOther_HomeForm.Designer.cs">
+      <DependentUpon>PanelMemberOther_HomeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProgramDirector_HomeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProgramDirector_HomeForm.Designer.cs">
+      <DependentUpon>ProgramDirector_HomeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProgrammeAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProgrammeAdd.Designer.cs">
+      <DependentUpon>ProgrammeAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProgrammeEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProgrammeEdit.Designer.cs">
+      <DependentUpon>ProgrammeEdit.cs</DependentUpon>
+    </Compile>
     <Compile Include="ProgrammeMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,6 +258,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoleSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoleSelector.Designer.cs">
+      <DependentUpon>RoleSelector.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -149,6 +275,66 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Administrator.resx">
       <DependentUpon>Administrator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminModuleMenu.resx">
+      <DependentUpon>AdminModuleMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminProgrammeMenu.resx">
+      <DependentUpon>AdminProgrammeMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateAssesment.resx">
+      <DependentUpon>CreateAssesment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteProgramme.resx">
+      <DependentUpon>DeleteProgramme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteUser.resx">
+      <DependentUpon>DeleteUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoS_HomeForm.resx">
+      <DependentUpon>DoS_HomeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FacHub_HomeForm.resx">
+      <DependentUpon>FacHub_HomeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HoD_HomeForm.resx">
+      <DependentUpon>HoD_HomeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Moderator_HomeForm.resx">
+      <DependentUpon>Moderator_HomeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleAdd.resx">
+      <DependentUpon>ModuleAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleDelete.resx">
+      <DependentUpon>ModuleDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleEdit.resx">
+      <DependentUpon>ModuleEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleLeader_HomeForm.resx">
+      <DependentUpon>ModuleLeader_HomeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleTeamManager.resx">
+      <DependentUpon>ModuleTeamManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleTeam_HomeForm.resx">
+      <DependentUpon>ModuleTeam_HomeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelAdmin_HomeForm.resx">
+      <DependentUpon>PanelAdmin_HomeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelMemberOther_HomeForm.resx">
+      <DependentUpon>PanelMemberOther_HomeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgramDirector_HomeForm.resx">
+      <DependentUpon>ProgramDirector_HomeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgrammeAdd.resx">
+      <DependentUpon>ProgrammeAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgrammeEdit.resx">
+      <DependentUpon>ProgrammeEdit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProgrammeMenu.resx">
       <DependentUpon>ProgrammeMenu.cs</DependentUpon>
@@ -199,6 +385,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="RoleSelector.resx">
+      <DependentUpon>RoleSelector.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserMenu.resx">
       <DependentUpon>UserMenu.cs</DependentUpon>
     </EmbeddedResource>

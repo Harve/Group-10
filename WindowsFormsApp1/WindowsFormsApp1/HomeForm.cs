@@ -26,7 +26,7 @@ namespace UserInterface
             InitializeComponent();
             label1.Text = "Welcome " + CurrentUser.firstname + " " + CurrentUser.surname;
             AdminButton.Hide();
-            if(CurrentUser.role == "Admin")
+            if (true)
             {
                 AdminButton.Show();
             }
@@ -39,7 +39,7 @@ namespace UserInterface
             InitializeComponent();
             label1.Text = "Welcome " + CurrentUser.firstname + " " + CurrentUser.surname;
             AdminButton.Hide();
-            if (CurrentUser.role == "Admin")
+            if (true)
             {
                 AdminButton.Show();
             }
@@ -59,7 +59,7 @@ namespace UserInterface
 
         private void NotificationButton_Click(object sender, EventArgs e)
         {
-            Notifications notifications = new Notifications(CurrentUser);
+            Notifications notifications = new Notifications(CurrentUser,this);
             this.Hide();
             notifications.Show();
         }
@@ -87,19 +87,21 @@ namespace UserInterface
             this.Hide();
             calendar.Show();
         }
-
+        /*
         private void AdminButton_Click(object sender, EventArgs e)
         {
             Administrator administrator = new Administrator(CurrentUser);
             this.Hide();
             administrator.Show();
         }
-
+        */
+        /*
         private void MyAssessmentsButton_Click(object sender, EventArgs e)
         {
             MyAssessments myAssessments = new MyAssessments(CurrentUser);
             this.Hide();
             myAssessments.Show();
         }
+        */
     }
 }

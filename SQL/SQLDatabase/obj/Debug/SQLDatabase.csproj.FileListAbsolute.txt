@@ -166,3 +166,23 @@ C:\Users\Work Account\Documents\GitHub\Group-10\SQL\SQLDatabase\obj\Debug\SQLDat
 \\adir.hull.ac.uk\home\578\578647\Systems Analysis Project\12-12-19\Group-10-Harvey\SQL\SQLDatabase\obj\Debug\SQLDatabase.csproj.CopyComplete
 \\adir.hull.ac.uk\home\578\578647\Systems Analysis Project\12-12-19\Group-10-Harvey\SQL\SQLDatabase\obj\Debug\SQLDatabase.exe
 \\adir.hull.ac.uk\home\578\578647\Systems Analysis Project\12-12-19\Group-10-Harvey\SQL\SQLDatabase\obj\Debug\SQLDatabase.pdb
+D:\Jacek\Uni\Semseter 3\System Analysis, Design and Process\ACW\Group-10\SQL\SQLDatabase\bin\Debug\SQLDatabase.exe.config
+D:\Jacek\Uni\Semseter 3\System Analysis, Design and Process\ACW\Group-10\SQL\SQLDatabase\bin\Debug\SQLDatabase.exe
+D:\Jacek\Uni\Semseter 3\System Analysis, Design and Process\ACW\Group-10\SQL\SQLDatabase\bin\Debug\SQLDatabase.pdb
+D:\Jacek\Uni\Semseter 3\System Analysis, Design and Process\ACW\Group-10\SQL\SQLDatabase\bin\Debug\Backbone.exe
+D:\Jacek\Uni\Semseter 3\System Analysis, Design and Process\ACW\Group-10\SQL\SQLDatabase\bin\Debug\EntityFramework.dll
+D:\Jacek\Uni\Semseter 3\System Analysis, Design and Process\ACW\Group-10\SQL\SQLDatabase\bin\Debug\EntityFramework.SqlServer.dll
+D:\Jacek\Uni\Semseter 3\System Analysis, Design and Process\ACW\Group-10\SQL\SQLDatabase\bin\Debug\System.Data.SQLite.dll
+D:\Jacek\Uni\Semseter 3\System Analysis, Design and Process\ACW\Group-10\SQL\SQLDatabase\bin\Debug\System.Data.SQLite.EF6.dll
+D:\Jacek\Uni\Semseter 3\System Analysis, Design and Process\ACW\Group-10\SQL\SQLDatabase\bin\Debug\System.Data.SQLite.Linq.dll
+D:\Jacek\Uni\Semseter 3\System Analysis, Design and Process\ACW\Group-10\SQL\SQLDatabase\bin\Debug\Backbone.pdb
+D:\Jacek\Uni\Semseter 3\System Analysis, Design and Process\ACW\Group-10\SQL\SQLDatabase\bin\Debug\Backbone.exe.config
+D:\Jacek\Uni\Semseter 3\System Analysis, Design and Process\ACW\Group-10\SQL\SQLDatabase\bin\Debug\EntityFramework.xml
+D:\Jacek\Uni\Semseter 3\System Analysis, Design and Process\ACW\Group-10\SQL\SQLDatabase\bin\Debug\EntityFramework.SqlServer.xml
+D:\Jacek\Uni\Semseter 3\System Analysis, Design and Process\ACW\Group-10\SQL\SQLDatabase\bin\Debug\System.Data.SQLite.xml
+D:\Jacek\Uni\Semseter 3\System Analysis, Design and Process\ACW\Group-10\SQL\SQLDatabase\bin\Debug\System.Data.SQLite.dll.config
+D:\Jacek\Uni\Semseter 3\System Analysis, Design and Process\ACW\Group-10\SQL\SQLDatabase\obj\Debug\SQLDatabase.csprojAssemblyReference.cache
+D:\Jacek\Uni\Semseter 3\System Analysis, Design and Process\ACW\Group-10\SQL\SQLDatabase\obj\Debug\SQLDatabase.csproj.CoreCompileInputs.cache
+D:\Jacek\Uni\Semseter 3\System Analysis, Design and Process\ACW\Group-10\SQL\SQLDatabase\obj\Debug\SQLDatabase.csproj.CopyComplete
+D:\Jacek\Uni\Semseter 3\System Analysis, Design and Process\ACW\Group-10\SQL\SQLDatabase\obj\Debug\SQLDatabase.exe
+D:\Jacek\Uni\Semseter 3\System Analysis, Design and Process\ACW\Group-10\SQL\SQLDatabase\obj\Debug\SQLDatabase.pdb

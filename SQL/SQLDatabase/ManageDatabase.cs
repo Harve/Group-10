@@ -22,26 +22,29 @@ namespace SQLDatabase
             SQLiteConnection m_dbConnection = new SQLiteConnection("Data Source=Database.sqlite;Version=3;");
             m_dbConnection.Open();
 
-            string sql = "create table user (userid varchar(8), password varchar (30),firstname varchar(20), surname varchar(20), role varchar(30))";
+            string sql = "create table user (userid varchar(8), password varchar (30),firstname varchar(20), surname varchar(20))";
 
             SQLiteCommand command = new SQLiteCommand(sql, m_dbConnection);
             command.ExecuteNonQuery();
 
 
 
-            sql = "create table programme (programmeid varchar(8),title varchar(40), userid varchar(8) )";
+            sql = "create table programme (programmeid varchar(8),title varchar(40),userid varchar(8))";
 
             command = new SQLiteCommand(sql, m_dbConnection);
             command.ExecuteNonQuery();
 
-
-
-            sql = "create table module (moduleid varchar(8),title varchar(40), programmeid varchar(8))";
+            sql = "create table role (userID varchar(8),role varchar (30))";
 
             command = new SQLiteCommand(sql, m_dbConnection);
             command.ExecuteNonQuery();
 
-            sql = "create table assessment (assessmentid varchar(8),title varchar(40), moduleid varchar(8) )";
+            sql = "create table module (moduleid varchar(8),title varchar(40), programmeid varchar(8), moduleleader varchar(8))";
+
+            command = new SQLiteCommand(sql, m_dbConnection);
+            command.ExecuteNonQuery();
+
+            sql = "create table assessment (assessmentid varchar(8),userid varchar(8), moduleid varchar(8),laststep varchar(2),nextstep varchar(3) )";
 
             command = new SQLiteCommand(sql, m_dbConnection);
             command.ExecuteNonQuery();
@@ -58,7 +61,8 @@ namespace SQLDatabase
             command = new SQLiteCommand(sql, m_dbConnection);
             command.ExecuteNonQuery();
 
-            InsertIntoDatabase.InsertIntoUser("adminuser", "adminpassword", "Admin", "User", "Admin");
+            InsertIntoDatabase.InsertIntoUser("adminuser", "adminpassword", "Admin", "User");
+            InsertIntoDatabase.InsertIntoRole("adminuser", "Administrator");
             m_dbConnection.Close();
         }
 

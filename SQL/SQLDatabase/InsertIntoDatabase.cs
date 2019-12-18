@@ -11,7 +11,7 @@ namespace SQLDatabase
     public static class InsertIntoDatabase
     {
 
-        public static void InsertIntoUser(string id,string password,string firstname,string surname, string role)
+        public static void InsertIntoUser(string id,string password,string firstname,string surname)
         {
             password = Encryption.Encrypt(password);
             SQLiteConnection m_dbConnection = new SQLiteConnection("Data Source=Database.sqlite;Version=3;");
@@ -20,16 +20,30 @@ namespace SQLDatabase
             using (SQLiteCommand command = new SQLiteCommand(m_dbConnection))
             {
                 command.CommandText =
-                    "insert into user (userid,password,firstname,surname,role) values (@id,@password,@fname,@sname,@role)";
+                    "insert into user (userid,password,firstname,surname) values (@id,@password,@fname,@sname)";
                 command.Parameters.AddWithValue("@id", id);
                 command.Parameters.AddWithValue("@password", password);
                 command.Parameters.AddWithValue("@fname", firstname);
                 command.Parameters.AddWithValue("@sname", surname);
-                command.Parameters.AddWithValue("@role", role);
                 command.ExecuteNonQuery();
             }
             m_dbConnection.Close();
-        
+        }
+
+        public static void InsertIntoRole(string id, string userRole)
+        {
+            SQLiteConnection m_dbConnection = new SQLiteConnection("Data Source=Database.sqlite;Version=3;");
+            m_dbConnection.Open();
+
+            using (SQLiteCommand command = new SQLiteCommand(m_dbConnection))
+            {
+                command.CommandText =
+                    "insert into role (userID,role) values (@id,@userRole)";
+                command.Parameters.AddWithValue("@id", id);
+                command.Parameters.AddWithValue("@userRole", userRole);
+                command.ExecuteNonQuery();
+            }
+            m_dbConnection.Close();
         }
 
         public static void InsertIntoProgramme(string programmeid, string title, string userid)
@@ -49,7 +63,7 @@ namespace SQLDatabase
             m_dbConnection.Close();
         }
 
-        public static void InsertIntoModule(string moduleid, string title, string programmeid)
+        public static void InsertIntoModule(string moduleid, string title, string programmeid,string moduleleader)
         {
             SQLiteConnection m_dbConnection = new SQLiteConnection("Data Source=Database.sqlite;Version=3;");
             m_dbConnection.Open();
@@ -57,33 +71,37 @@ namespace SQLDatabase
             using (SQLiteCommand command = new SQLiteCommand(m_dbConnection))
             {
                 command.CommandText =
-                    "insert into module (moduleid,title,programmeid) values (@mid,@title,@pid)";
+                    "insert into module (moduleid,title,programmeid,moduleleader) values (@mid,@title,@pid,@mldr)";
                 command.Parameters.AddWithValue("@mid", moduleid);
                 command.Parameters.AddWithValue("@title", title);
                 command.Parameters.AddWithValue("@pid", programmeid);
+                command.Parameters.AddWithValue("@mldr", moduleleader);
                 command.ExecuteNonQuery();
             }
             m_dbConnection.Close();
         }
 
-        public static void InsertIntoAssessment(string assessmentid, string title, string moduleid)
+        public static void InsertIntoAssessment(string assessmentid, string userid, string moduleid, string laststep,string nextstep)
         {
             SQLiteConnection m_dbConnection = new SQLiteConnection("Data Source=Database.sqlite;Version=3;");
             m_dbConnection.Open();
             using (SQLiteCommand command = new SQLiteCommand(m_dbConnection))
             {
                 command.CommandText =
-                    "insert into assessment (assessmentid,title,moduleid) values (@aid,@title,@mid)";
+                    "insert into assessment (assessmentid,userid,moduleid,laststep,nextstep) values (@aid,@userid,@mid,@lstep,@nstep)";
                 command.Parameters.AddWithValue("@aid", assessmentid);
-                command.Parameters.AddWithValue("@title", title);
+                command.Parameters.AddWithValue("@userID", userid);
                 command.Parameters.AddWithValue("@mid", moduleid);
+                command.Parameters.AddWithValue("@lstep", laststep);
+                command.Parameters.AddWithValue("@nstep", nextstep);
                 command.ExecuteNonQuery();
             }
             m_dbConnection.Close();
         }
 
-        public static void InsertIntoModuleTeam(string userid, string moduleid, int leader)
+        public static void InsertIntoModuleTeam(string userid, string moduleid)
         {
+            bool leader = false;
             SQLiteConnection m_dbConnection = new SQLiteConnection("Data Source=Database.sqlite;Version=3;");
             m_dbConnection.Open();
             using (SQLiteCommand command = new SQLiteCommand(m_dbConnection))

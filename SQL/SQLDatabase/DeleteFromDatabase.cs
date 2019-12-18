@@ -22,12 +22,25 @@ namespace SQLDatabase
             m_dbConnection.Close();
         }
 
+        public static void DeleteRole(string id)
+        {
+            SQLiteConnection m_dbConnection = new SQLiteConnection("Data Source=Database.sqlite;Version=3;");
+            m_dbConnection.Open();
+
+            string sql = "delete from role where userid =" + id;
+            SQLiteCommand command = new SQLiteCommand(sql, m_dbConnection);
+            command.ExecuteNonQuery();
+
+            m_dbConnection.Close();
+
+        }
+
         public static void DeleteProgramme(string id)
         {
             SQLiteConnection m_dbConnection = new SQLiteConnection("Data Source=Database.sqlite;Version=3;");
             m_dbConnection.Open();
 
-            string sql = "delete from programme where programmeid =" + id;
+            string sql = "delete from programme where programmeid = " + id;
 
             SQLiteCommand command = new SQLiteCommand(sql, m_dbConnection);
             command.ExecuteNonQuery();
@@ -58,12 +71,12 @@ namespace SQLDatabase
 
             m_dbConnection.Close();
         }
-        public static void DeleteModuleTeam(string moduleid, string userid)
+        public static void DeleteModuleTeam(string moduleid)
         {
             SQLiteConnection m_dbConnection = new SQLiteConnection("Data Source=Database.sqlite;Version=3;");
             m_dbConnection.Open();
 
-            string sql = "delete from moduleteam where userid =" + userid + " and moduleid = " + moduleid;
+            string sql = "delete from moduleteam where moduleid =" + moduleid;
 
             SQLiteCommand command = new SQLiteCommand(sql, m_dbConnection);
             command.ExecuteNonQuery();

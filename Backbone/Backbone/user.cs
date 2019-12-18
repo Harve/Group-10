@@ -12,13 +12,11 @@ namespace Backbone
         public string id;
         public string firstname;
         public string surname;
-        public string role;
-        public User(string userid, string fname, string sname, string Role)
+        public User(string userid, string fname, string sname)
         {
             id = userid;
             firstname = fname;
             surname = sname;
-            role = Role;
         }
     }
 }

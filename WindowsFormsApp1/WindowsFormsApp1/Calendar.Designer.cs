@@ -45,7 +45,7 @@
             this.CalendarView.Location = new System.Drawing.Point(121, 75);
             this.CalendarView.Name = "CalendarView";
             this.CalendarView.TabIndex = 0;
-            this.CalendarView.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.CalendarView_DateSelected);
+            //this.CalendarView.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.CalendarView_DateSelected);
             // 
             // CalendarLabel
             // 

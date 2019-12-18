@@ -14,8 +14,10 @@ namespace UserInterface
     public partial class Administrator : Form
     {
         public User CurrentUser;
-        public Administrator(User user)
+        private Form previousForm;
+        public Administrator(User user,Form previousFrom)
         {
+            this.previousForm = previousFrom;
             CurrentUser = user;
             InitializeComponent();
         }
@@ -27,37 +29,42 @@ namespace UserInterface
 
         private void BackButton_Click(object sender, EventArgs e)
         {
-            HomeForm homeForm = new HomeForm(CurrentUser);
-            this.Hide();
-            homeForm.Show();
+            previousForm.Show();
+            this.Close();
         }
 
         private void UsersButton_Click(object sender, EventArgs e)
         {
-            UserMenu addUser = new UserMenu(CurrentUser);
+            UserMenu addUser = new UserMenu(CurrentUser,this);
             this.Hide();
             addUser.Show();
         }
-
+        
         private void ReviewAssessmentsButton_Click(object sender, EventArgs e)
         {
             AssessmentMenu assessmentMenu = new AssessmentMenu(CurrentUser);
             this.Hide();
             assessmentMenu.Show();
         }
-
+        
         private void ModulesButton_Click(object sender, EventArgs e)
         {
-            ModuleMenu moduleMenu = new ModuleMenu(CurrentUser);
+            AdminModuleMenu adminModuleMenu = new AdminModuleMenu(CurrentUser, this);
             this.Hide();
-            moduleMenu.Show();
+            adminModuleMenu.Show();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)//Programme Button
         {
-            ProgrammeMenu programmeMenu = new ProgrammeMenu(CurrentUser);
+            AdminProgrammeMenu adminProgrammeMenu = new AdminProgrammeMenu(CurrentUser, this);
             this.Hide();
-            programmeMenu.Show();
+            adminProgrammeMenu.Show();
+
+        }
+
+        private void BackButtonPictureBox_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

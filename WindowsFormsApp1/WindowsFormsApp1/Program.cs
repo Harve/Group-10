@@ -15,12 +15,11 @@ namespace UserInterface
         [STAThread]
         static void Main()
         {
+            //SQLDatabase.ManageDatabase.CreateDatabase();
 
-            //SQLDatabase.InsertIntoDatabase.InsertIntoNotification("TEST MESSAGE", "adminuser", "adminuser");
-           
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-           Application.Run(new LogOnForm());
+            Application.Run(new LogOnForm());
         }
     }
 }

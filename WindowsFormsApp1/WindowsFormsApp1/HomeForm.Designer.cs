@@ -80,7 +80,7 @@
             this.MyAssessmentsButton.TabIndex = 2;
             this.MyAssessmentsButton.Text = "My Assessments";
             this.MyAssessmentsButton.UseVisualStyleBackColor = true;
-            this.MyAssessmentsButton.Click += new System.EventHandler(this.MyAssessmentsButton_Click);
+            //this.MyAssessmentsButton.Click += new System.EventHandler(this.MyAssessmentsButton_Click);
             // 
             // CalendarButton
             // 
@@ -102,7 +102,7 @@
             this.AdminButton.TabIndex = 4;
             this.AdminButton.Text = "Admin";
             this.AdminButton.UseVisualStyleBackColor = true;
-            this.AdminButton.Click += new System.EventHandler(this.AdminButton_Click);
+            //this.AdminButton.Click += new System.EventHandler(this.AdminButton_Click);
             // 
             // LogOutButton
             // 
